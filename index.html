@@ -69,8 +69,8 @@
       var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?key=0Ao3Ts9D8bHHpdDlXWVlhSl9UelVmSjV0NHJBUGxQbFE&output=html';
       var dist;
       var freeze;
-      var NCSenateDistricts = {};
-      console.log('NCSenateDistricts', NCSenateDistricts);
+      var MDSenateDistricts = {};
+      console.log('MDSenateDistricts', MDSenateDistricts);
       var app = {};
       var senateLayer;
       var latitude = 38.82;
@@ -101,20 +101,30 @@
           member['scoreColor'] = scoreColor;
           var html = template(member);
           $("#content").append(html);
-          NCSenateDistricts[member.district] = member;
+          MDSenateDistricts[member.district] = member;
         });
 
-        console.log(NCSenateDistricts);
+        console.log(MDSenateDistricts);
         loadGeo();
 //          processJSON(tabletop.sheets("Sheet1").all());
       }
+
+
+function scoreToColor() {
+  var sldust = Number(data.properties.SLDUST);
+  console.log(MDSenateDistricts)
+  var score = MDSenateDistricts[sldust].score2013;
+  console.log()
+  return getColor(score);
+}
+
     var geoStyle = function(data) {
       var sldust = Number(data.properties.SLDUST);
       console.log(sldust);
       // Sort out how to get at the SLDUST data.
       // console.log("geoStyle: ", Number(data.properties.SLDUST));
 
-      var score = NCSenateDistricts[sldust].score2013;
+      var score = MDSenateDistricts[sldust].score2013;
       var scoreToColor = getColor(score);
 
       return {
@@ -127,68 +137,48 @@
       }
       }
 
-      function loadGeo(district) {
-        senateLayer = L.geoJson(geosenate, {
-          onEachFeature:onEachFeature,
-          style: geoStyle
-        });
-
-//           for (var k = 0; k < geosenate.features.length; k++) {
-// //            console.log('k', k);
-// //            console.log(geosenate.features[k].properties.SLDUST);
-//             dist = parseInt(geosenate.features[k].properties.SLDUST);
-//             senateLayer.setStyle(function(shape) {
-//               return getColor(dist, shape);
-//               });
-//             }
+//      function loadGeo(district) {
+//        senateLayer = L.geoJson(geosenate, {
+//          onEachFeature:onEachFeature,
+//          style: geoStyle
+//        });
+//        senateLayer.addTo(map);
+//      }
 
 
-        senateLayer.addTo(map);
+
+var geojsonMarkerOptions = {
+  radius: 5,
+  fillColor: geoStyle, //"#ff7800",
+  color: "#000",
+  weight: 1,
+  opacity: 1,
+  fillOpacity: 0.8
+};
+
+function loadGeo(district) {
+  senateLayer = L.geoJson(geosenate, {
+    onEachFeature:onEachFeature,
+    pointToLayer: function (feature, latlng) {
+      return L.circleMarker(latlng, geojsonMarkerOptions);
+    }
+  }).addTo(map);
+}
 
 
-//      .q0-6{fill:rgb(255,0,0)}
-//      .q1-6{fill:#FC8400;}
-//      .q2-6{fill:#FDC300;}
-//      .q3-6{fill:#FEF200;}
-//      .q4-6{fill:#82e0c3;}
-//      .q5-6{fill:#4EAB07;}
-
-
-//        L.tileLayer('http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png', {
-//          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://cloudmade.com">CloudMade</a>',
-//          key: '4733d063f9704b1c940a64459b1263e9',
-//          styleId: 96931,
-//          maxZoom: 18
-//        }).addTo(map);
-
-
-      }
-
-      function onEachFeature(feature, layer) {
-        layer.on({
-          mouseover: highlightFeature,
-          mouseout: resetHighlight,
-          click: mapMemberDetailClick
-        });
-      }
+function onEachFeature(feature, layer) {
+  layer.on({
+    mouseover: highlightFeature,
+    mouseout: resetHighlight,
+    click: mapMemberDetailClick
+  });
+}
 
 
       function highlightFeature(e) {
         var layer = e.target;
         var memberNumber = Number(layer.feature.properties.SLDUST);
-        var memberDetail = NCSenateDistricts[memberNumber];
-        var html;
-
-        console.log("highlightFeature: ", layer);
-
-        html  = "<div class='highlightFeatureInfo'>";
-        html += "<strong>" + memberDetail.fullname + "</strong>";
-        html += " (";
-        html += memberDetail.party;
-        html += ")";
-        html += "</div>";
-
-//        $('.info').html(html);
+        var memberDetail = MDSenateDistricts[memberNumber];
 
         // This fills in the sidebar as you mouse around.
         // NO STICKY CLICK
@@ -233,7 +223,7 @@
 
 
       function memberDetailFunction(memberNumber){
-        var districtDetail = NCSenateDistricts[memberNumber]
+        var districtDetail = MDSenateDistricts[memberNumber]
         // 1. Build Template for the information box from districtDetails attributes.
         // 2. Insert the rendered template into .info
 
@@ -252,36 +242,12 @@
                score > 0   ? 'rgb(244, 109, 67)' :
                'rgb(165, 0, 38)';
       }
-
-
-
-      var info = L.control();
-
-      info.onAdd = function (map) {
-          this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-          this.update();
-          return this._div;
-      };
-      //      // method that we will use to update the control based on feature properties passed
-      info.update = function (props) {
-          this._div.innerHTML = '<h4>Why won\'t this display</h4>'+  (props ?  '<b>' + props.SLDUST +'</b>'
-                  : 'Hover over a state');
-      };
-      //
-      info.addTo(map);
       $(document).on("click","button",function(event) {
         event.preventDefault();
         clearInfobox();
         freeze=0;
       });
     </script>
-
-
-
-
-
-
-
 
         <script id="senate-template" type="text/x-handlebars-template">
           <div class="entry" >
