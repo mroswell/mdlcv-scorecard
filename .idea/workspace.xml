@@ -26,7 +26,7 @@
       <file leaf-file-name="ncproto.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maps/ncproto.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+            <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="17867">
               <folding />
             </state>
           </provider>
@@ -35,11 +35,29 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="249" column="13" selection-start="7640" selection-end="7640" vertical-scroll-proportion="0.67464113" vertical-offset="3861" max-vertical-offset="5253">
+            <state line="60" column="71" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.19547658" vertical-offset="916" max-vertical-offset="1972">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#script#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#script#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#script#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#script#6;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tabletop_prev.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/vendor/tabletop_prev.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8177">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tabletop.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/vendor/tabletop.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="563" column="9" selection-start="17706" selection-end="17706" vertical-scroll-proportion="0.0" vertical-offset="9057" max-vertical-offset="9741">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,7 +81,16 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+            <state line="1" column="49" selection-start="50" selection-end="50" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="2958">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cb_2013_24_sldu_500k.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/maps/cb_2013_24_sldu_500k.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="2344" selection-end="2344" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="901">
               <folding />
             </state>
           </provider>
@@ -81,7 +108,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="15" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.0" vertical-offset="2278" max-vertical-offset="2584">
+            <state line="137" column="14" selection-start="2489" selection-end="2508" vertical-scroll-proportion="0.0" vertical-offset="2019" max-vertical-offset="2771">
               <folding />
             </state>
           </provider>
@@ -99,13 +126,17 @@
       <list>
         <option value="$PROJECT_DIR$/maps/ncproto.json" />
         <option value="$PROJECT_DIR$/maps/md_sldu_circles.json" />
+        <option value="$PROJECT_DIR$/maps/cb_2013_24_sldu_500k.json" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/vendor/tabletop.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="x" value="-18" />
+    <option name="y" value="41" />
     <option name="width" value="1440" />
     <option name="height" value="825" />
   </component>
@@ -192,6 +223,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mdlcv-scorecard-map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mdlcv-scorecard-map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -258,7 +307,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="825" extended-state="6" />
+    <frame x="-18" y="41" width="1440" height="825" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -308,8 +357,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="190" column="30" selection-start="6518" selection-end="6551" vertical-scroll-proportion="0.0" vertical-offset="3230" max-vertical-offset="5678">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#script#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#script#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#script#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#script#6;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -358,36 +407,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="112" column="26" selection-start="4198" selection-end="4198" vertical-scroll-proportion="0.0" vertical-offset="1904" max-vertical-offset="5678">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#script#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#script#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#script#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#script#6;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/favicon.ico">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maps/ncproto.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="17867">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="15" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.0" vertical-offset="1791" max-vertical-offset="2584">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/maps/md_sldu_circles.json">
@@ -404,12 +432,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/maps/cb_2013_24_sldu_500k.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="2344" selection-end="2344" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maps/ncproto.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="17867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="14" selection-start="2489" selection-end="2508" vertical-scroll-proportion="0.0" vertical-offset="2019" max-vertical-offset="2771">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="49" selection-start="50" selection-end="50" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="2958">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/vendor/tabletop_prev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8177">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/vendor/tabletop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="563" column="9" selection-start="17706" selection-end="17706" vertical-scroll-proportion="0.0" vertical-offset="9057" max-vertical-offset="9741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="249" column="13" selection-start="7640" selection-end="7640" vertical-scroll-proportion="0.67464113" vertical-offset="3861" max-vertical-offset="5253">
+        <state line="60" column="71" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.19547658" vertical-offset="916" max-vertical-offset="1972">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#script#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#script#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#script#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#script#6;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

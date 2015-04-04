@@ -5,11 +5,9 @@
    ========================================================================== */
 
 #map {
-    height: 400px;
+    height: 404px;
     width: 880px;
 }
-
-
 
 body {
     background: #f7f7f7; /*#FCFCBD;*/
@@ -71,14 +69,6 @@ h2 {
 .q4-6{fill:#82e0c3;}
 .q5-6{fill:#4EAB07;}
 
-.q0-6{fill:rgb(255,0,0)}
-.q1-6{fill:#FC8400;}
-.q2-6{fill:#FDC300;}
-.q3-6{fill:#FEF200;}
-.q4-6{fill:#82e0c3;}
-.q5-6{fill:#4EAB07;}
-
-
 .q0-7{fill:#D32;}
 .q1-7{fill:#E98736;}
 .q2-7{fill:#F1C76E;}
@@ -91,7 +81,7 @@ h2 {
 .q6-7{fill:#195;}
 .q7-7{fill: rgba(22, 48, 3, 0.93);}
 
-button.close {margin-top: -4px;margin-right: -8px; }
+button.close {margin-top: -10px;margin-right: -8px; }
 
 .my-legend .legend-title {
     text-align: left;
@@ -135,8 +125,29 @@ button.close {margin-top: -4px;margin-right: -8px; }
     height: 10px;
 }
 
+.parent {
+    /*position: relative;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.child {
+    width: 192px;
+    height: 192px;
+    padding: 15px;
+    border: solid #E9E9E9 1px;
 
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    background-color: #ffffff;
+    /*margin: -70px 0 0 -170px;*/
+}
+
+.container {
+    width: 970px;
+}
 
 
 

@@ -26,12 +26,12 @@
       <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
 
       <script type="text/javascript" src="js/vendor/handlebars.js"></script>
+      <script src="maps/cb_2013_24_sldu_500k.json"></script>
       <script src="maps/md_sldu_centroids.json"></script>
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
-
 
     <div class="container">
     <div class="row">
@@ -48,217 +48,26 @@
     </div>
     </div><!-- /container -->
 
-
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-
     <script src="js/vendor/bootstrap.min.js"></script>
-
     <script src="js/main.js"></script>
-
     <script type="text/javascript" src="js/vendor/tabletop.js"></script>
-
-    <script type="text/javascript">
-//      var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?key=0Ao3Ts9D8bHHpdHRWYmRIYldKcFBFVnRELUhVay04NWc&single=true&gid=0&output=html';
-      var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?key=0Ao3Ts9D8bHHpdDlXWVlhSl9UelVmSjV0NHJBUGxQbFE&output=html';
-      var dist;
-      var freeze;
-      var MDSenateDistricts = {};
-      console.log('MDSenateDistricts', MDSenateDistricts);
-      var app = {};
-      var senateLayer;
-      var latitude = 38.82;
-      var longitude = -77.28;
-      var latLng = new L.LatLng(latitude, longitude);
-      var sidebar = $('#sidebar');
-      var map = L.map('map').setView(latLng, 7);
-
-
-      function clearInfobox() {
-        sidebar.html(' ');
-      }
-
-      $(document).ready( function() {
-        Tabletop.init( { key: public_spreadsheet_url,
-          callback: showInfo,
-          parseNumbers: true } );
-      });
-
-      function showInfo(data, tabletop) {
-        var scoreColor;
-        var source   = $("#senate-template").html();
-        var template = Handlebars.compile(source);
-        var sourcebox = $("#senate-template-infobox").html();
-        app.infoboxTemplate = Handlebars.compile(sourcebox);
-        $.each( tabletop.sheets("Senate2015").all(), function(i, member) {
-          scoreColor = getColor(member.score2013);
-          member['scoreColor'] = scoreColor;
-          var html = template(member);
-          $("#content").append(html);
-          MDSenateDistricts[member.district] = member;
-        });
-
-        console.log(MDSenateDistricts);
-        loadGeo();
-//          processJSON(tabletop.sheets("Sheet1").all());
-      }
-
-
-function scoreToColor() {
-  var sldust = Number(data.properties.SLDUST);
-  console.log(MDSenateDistricts)
-  var score = MDSenateDistricts[sldust].score2013;
-  console.log()
-  return getColor(score);
-}
-
-    var geoStyle = function(data) {
-      var sldust = Number(data.properties.SLDUST);
-      console.log(sldust);
-      // Sort out how to get at the SLDUST data.
-      // console.log("geoStyle: ", Number(data.properties.SLDUST));
-
-      var score = MDSenateDistricts[sldust].score2013;
-      var scoreToColor = getColor(score);
-
-      return {
-        fillColor: scoreToColor,
-        weight: 1,
-        opacity: 0.51,
-        color: '#333333',
-        dashArray: '0',
-        fillOpacity: 1
-      }
-      }
-
-//      function loadGeo(district) {
-//        senateLayer = L.geoJson(geosenate, {
-//          onEachFeature:onEachFeature,
-//          style: geoStyle
-//        });
-//        senateLayer.addTo(map);
-//      }
-
-
-
-var geojsonMarkerOptions = {
-  radius: 5,
-  fillColor: geoStyle, //"#ff7800",
-  color: "#000",
-  weight: 1,
-  opacity: 1,
-  fillOpacity: 0.8
-};
-
-function loadGeo(district) {
-  senateLayer = L.geoJson(geosenate, {
-    onEachFeature:onEachFeature,
-    pointToLayer: function (feature, latlng) {
-      return L.circleMarker(latlng, geojsonMarkerOptions);
-    }
-  }).addTo(map);
-}
-
-
-function onEachFeature(feature, layer) {
-  layer.on({
-    mouseover: highlightFeature,
-    mouseout: resetHighlight,
-    click: mapMemberDetailClick
-  });
-}
-
-
-      function highlightFeature(e) {
-        var layer = e.target;
-        var memberNumber = Number(layer.feature.properties.SLDUST);
-        var memberDetail = MDSenateDistricts[memberNumber];
-
-        // This fills in the sidebar as you mouse around.
-        // NO STICKY CLICK
-
-
-        if (!freeze) {
-
-        html = app.infoboxTemplate(memberDetail);
-        $('#sidebar').html(html);
-
-        layer.setStyle({
-          weight: 5,
-          color: '#666',
-          dashArray: '',
-          fillOpacity: 0.7
-        });
-
-        if (!L.Browser.ie && !L.Browser.opera) {
-          layer.bringToFront();
-        }
-        info.update(layer.feature.properties);
-      }
-      }
-      function resetHighlight(e) {
-        var layer = e.target;
-        senateLayer.resetStyle(e.target);
-        info.update();
-
-
-        if (!freeze) {
-          clearInfobox();
-        }
-      }
-
-      function mapMemberDetailClick(e) {
-          freeze=1;
-          var boundary = e.target;
-          var memberNumber = Number(boundary.feature.properties.SLDUST);
-          console.log("mapMemberDetailClick: ", memberNumber);
-          var member = memberDetailFunction(memberNumber);
-      }
-
-
-      function memberDetailFunction(memberNumber){
-        var districtDetail = MDSenateDistricts[memberNumber]
-        // 1. Build Template for the information box from districtDetails attributes.
-        // 2. Insert the rendered template into .info
-
-        var html = app.infoboxTemplate(districtDetail);
-        $('#sidebar').html(html);
-
-        // $('#sidebar').html(JSON.stringify(districtDetail));
-      }
-
-
-      function getColor(score) {
-        return score > 80 ? 'rgb(0, 104, 55)' :
-               score > 60  ? 'rgb(102, 189, 99)' :
-               score > 40   ? 'rgb(166, 217, 106)' :
-               score > 20   ? 'rgb(255, 255, 191)' :
-               score > 0   ? 'rgb(244, 109, 67)' :
-               'rgb(165, 0, 38)';
-      }
-      $(document).on("click","button",function(event) {
-        event.preventDefault();
-        clearInfobox();
-        freeze=0;
-      });
-    </script>
 
         <script id="senate-template" type="text/x-handlebars-template">
           <div class="entry" >
-          <div style='margin-top:-5px; margin-bottom:3px; background-color: {{scoreColor}};height:20px;'></div>
+          <div style='margin-top:-5px; margin-bottom:3px; background-color: {{scoreColor}}; height:20px;'></div>
             <div class="body">
               <strong>District {{{district}}}</strong><br>
-              {{{fullname}}} ({{{party}}})<br>
+              {{{full_name}}} ({{{party}}})<br>
               {{#if phone}}{{{phone}}}<br>{{/if}}
 
               Lifetime Score: <strong>{{{lifetimescore}}}</strong><br>
-              2013 Score: <strong>{{{score2013}}}</strong><br>
+              2015 Score: <strong>{{{score2015}}}</strong><br>
               {{{notes}}}<br>
               {{#if twitter}}<a  target='_new' href="http://twitter.com/{{{twitter}}}"><i class="icon-twitter icon-2x custom-icon"></i></a>{{/if}} {{#if facebook}} <a  target='_new' href="{{{facebook}}}"><i class="icon-facebook icon-2x custom-icon"></i></a> {{/if}}{{#if email}}<a  target='_new' href="mailto:{{{email}}}"><i class="icon-envelope icon-2x custom-icon"></i></a>{{/if}}
             </div>
@@ -266,15 +75,15 @@ function onEachFeature(feature, layer) {
         </script>
 
         <script id="senate-template-infobox" type="text/x-handlebars-template">
-          <div class="entry" style="padding-top:12px; background-color: {{scoreColor}};">
-            <div class="body">
+          <div class="entry parent" style="padding-top:12px; background-color: {{scoreColor}};">
+            <div class="body child">
               <button type='button' id='close' class='close'>&times;</button><br>
 
-              <strong>                {{{fullname}}} ({{{party}}})</strong><br>
+              <strong> {{{full_name}}} ({{{party}}})</strong><br>
               District {{{district}}}<br>
               {{#if phone}}{{{phone}}}<br>{{/if}}
               Lifetime Score: <strong>{{{lifetimescore}}}</strong><br>
-              2013 Score: <strong>{{{score2013}}}</strong><br>
+              2015 Score: <strong>{{{score2015}}}</strong><br>
               {{{notes}}}<br>
               {{#if twitter}}<a  target='_new' href="http://twitter.com/{{{twitter}}}"><i class="icon-twitter icon-2x custom-icon"></i></a>{{/if}} {{#if facebook}} <a  target='_new' href="{{{facebook}}}"><i class="icon-facebook icon-2x custom-icon"></i></a> {{/if}}{{#if email}}<a  target='_new' href="mailto:{{{email}}}"><i class="icon-envelope icon-2x custom-icon"></i></a>{{/if}}
             </div>
