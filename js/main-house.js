@@ -41,7 +41,7 @@ function showInfo(data, tabletop) {
     member['scoreColor'] = scoreColor;
     var html = template(member);
     $("#content").append(html);
-    MDSenateDistricts[member.district] = member;
+    MDSenateDistricts[member.rownum] = member;
   });
   console.log(MDSenateDistricts);
   loadGeo();
@@ -112,7 +112,7 @@ function onEachFeature(feature, layer) {
 
 function highlightFeature(e) {
   var layer = e.target;
-  var memberNumber = Number(layer.feature.properties.SLDUST);
+  var memberNumber = Number(layer.feature.properties.rownum);
   var memberDetail = MDSenateDistricts[memberNumber];
 
   // This fills in the sidebar as you mouse around.
