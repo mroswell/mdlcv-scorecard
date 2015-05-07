@@ -39,8 +39,11 @@ function showInfo(data, tabletop) {
     var html = template(member);
     $("#content").append(html);
     MDSenateDistricts[member.district] = member;
+    console.log(member);
+    MDSenateDistricts[member.district].partyAbbrev = MDSenateDistricts[member.district].party.charAt(0).toUpperCase();
+//    console.log(MDSenateDistricts[member.district].partyAbbrev);
+
   });
-  console.log(MDSenateDistricts);
   loadGeo();
   //          processJSON(tabletop.sheets("Sheet1").all());
 }
@@ -151,7 +154,9 @@ function mapMemberDetailClick(e) {
 
 
 function memberDetailFunction(memberNumber) {
-  var districtDetail = MDSenateDistricts[memberNumber]
+  var districtDetail = MDSenateDistricts[memberNumber];
+  console.log("party", MDSenateDistricts[memberNumber].party);
+//  districtDetail['partyAbbrev'] = MDSenateDistricts[memberNumber].party.charAt(0).toUpperCase();
   var html = app.infoboxTemplate(districtDetail);
   $('#sidebar').html(html);
   // $('#sidebar').html(JSON.stringify(districtDetail));
