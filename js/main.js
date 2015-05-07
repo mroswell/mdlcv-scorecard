@@ -36,12 +36,13 @@ function showInfo(data, tabletop) {
   $.each(tabletop.sheets("Senate2015").all(), function(i, member) {
     scoreColor = getColor(member.score2015);
     member['scoreColor'] = scoreColor;
-    var html = template(member);
-    $("#content").append(html);
+
     MDSenateDistricts[member.district] = member;
     console.log(member);
     MDSenateDistricts[member.district].partyAbbrev = MDSenateDistricts[member.district].party.charAt(0).toUpperCase();
-//    console.log(MDSenateDistricts[member.district].partyAbbrev);
+    var html = template(member);
+    $("#content").append(html);
+    //    console.log(MDSenateDistricts[member.district].partyAbbrev);
 
   });
   loadGeo();
