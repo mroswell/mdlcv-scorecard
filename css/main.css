@@ -55,8 +55,8 @@ img.ri:empty
 body {
     background: #0B8973; /*#FCFCBD;*/
     font-family: "arial", "helvetica", sans-serif;
-    /*padding-top: 50px;*/
     padding-bottom: 20px;
+    padding-top: 50px;
 
 }
 button {font: bold 0.9em arial,verdana,helvetica,sans-serif;}
@@ -319,5 +319,116 @@ button.close {margin-top: -10px;margin-right: -8px; }
 
 
 
+/************ map navigation **************/
+
+ul.pureCssMenu li:hover>ul{display:block}
+ul.pureCssMenu ul{position: absolute;left:-1px;top:98%;}
+ul.pureCssMenu,ul.pureCssMenu ul {
+    margin:0 0 1em 0;
+    list-style:none;
+    padding:0px 1px 1px 0px;
+    background-color:#fff; /*#A5A5A5;*/
+    background-repeat:repeat;
+    border-color:#A6A6A6;
+    border-width:0px;
+    border-style:solid;
+}ul.pureCssMenu {
+     display:block;
+     zoom:1;
+     float: left;
+ }
+ul.pureCssMenu ul{
+    width:0px;
+}
+ul.pureCssMenu li{
+    display:block;
+    margin:1px 6px 6px 1px;
+    font-size:0px;
+}
+UNUSEDul.pureCssMenu a:active, ul.pureCssMenu a:focus {
+    outline-style:none;
+}
+ul.pureCssMenu a, ul.pureCssMenu li.dis a:hover, ul.pureCssMenu li.sep a:hover {
+    display:block;
+    vertical-align:middle;
+    background-color:#0B8973;
+    border-width:0px;
+    border-color:#FCEEB0;
+    border-style:solid;
+    text-align:left;
+    text-decoration:none;
+    padding:5px;
+    _padding-left:0;
+    font:normal 12px Arial;
+    color: #fff;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+ul.pureCssMenu li.dis a:hover, ul.pureCssMenu li.sep a:hover {background-color:#1B9983}
+
+ul.pureCssMenu li {
+    float:left;
+}
+ul.pureCssMenu li:hover{
+    position:relative;
+}
+ul.pureCssMenu li:hover>a{
+    background-color:#1B9A84;
+    border-color:#4C99AB;
+    border-style:solid;
+    font:normal 12px Arial;
+    color: #FFFFFF;
+    text-decoration:none;
+}
+ul.pureCssMenu li a:hover{
+    position:relative;
+    background-color:#097361;
+    border-color:#4C99AB;
+    border-style:solid;
+    font:normal 12px Arial;
+    color: #FFFFFF;
+    text-decoration:none;
+}
+ul.pureCssMenu li.dis a:hover img.over{display:none !important}
+ul.pureCssMenu li.dis a:hover img.def {display:inline !important}
+ul.pureCssMenu li:hover > a img.def  {display:none}
+ul.pureCssMenu li:hover > a img.over {display:inline}
+ul.pureCssMenu a:hover img.over{display:inline}
+ul.pureCssMenu a:hover img.def{display:none}
+ul.pureCssMenu span{
+    display:block;
+
+    background-position:right center;
+    background-repeat: no-repeat;
+    padding-right:8px;}
+ul.pureCssMenu li:hover>a>span{	background-image:url(./images/arrv_white_2.gif);
+}
+
+ul.pureCssMenu li a.pureCssMenui0{
+    font:n;
+}
+ul.pureCssMenu li a.pureCssMenui0:hover{
+    font:o;
+}
+
+/******************* map help popup *********************/
+
+#nav1 a .pop {
+    display: block;
+    color: #000;
+    background-color: #fff;
+    width: 18em;
+    padding: .7em;
+    border: 2px solid #0B8973;
+    position: absolute;
+    top: 0;
+    left: 6em;
+    z-index: 10; /* Saf */
+    visibility: hidden;
+}
+#nav1 a:hover .pop {
+    visibility: visible;
+}
 
 

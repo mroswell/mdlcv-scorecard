@@ -60,7 +60,7 @@ var geoStyle = function(data) {
   var scoreToColor = getColor(score);
 
   return {
-    radius: 6,
+    radius: 5.5,
     fillColor: scoreToColor,
     weight: 2,
     opacity: 0.51,
@@ -73,9 +73,9 @@ var geoStyle = function(data) {
 
 function loadGeo(district) {
   var Hydda_Full = L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
-    minZoom: 0,
-    maxZoom: 9,
-    attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    minZoom: 8,
+    maxZoom: 10,
+    attribution: 'Tiles courtesy of <a href="http://openstreetmap.org/" target="_blank">OpenStreetMap </a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
 
   senateBoundaryLayer = L.geoJson(mdSenateBoundary, {
