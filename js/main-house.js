@@ -142,8 +142,7 @@ function resetHighlight(e) {
 function mapMemberDetailClick(e) {
   freeze = 1;
   var boundary = e.target;
-  var memberNumber = Number(boundary.feature.properties.SLDUST);
-  console.log("mapMemberDetailClick: ", memberNumber);
+  var memberNumber = Number(boundary.feature.properties.rownum);
   var member = memberDetailFunction(memberNumber);
 }
 
