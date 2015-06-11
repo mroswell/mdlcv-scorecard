@@ -9,10 +9,15 @@
 <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta http-equiv="content-language" content="en">
-  <title>Maryland League of Conservation Voters | 2015 House Legislative Scorecard</title>
+  <title>Maryland League of Conservation Voters | 2015 Senate Legislative Scorecard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:description"
+        content="Maryland League of Conservation Voters (LCV) is a non-partisan political voice for the environment.">
+  <meta name="description"
+        content="Maryland League of Conservation Voters (LCV) is a non-partisan political voice for the environment. Maryland LCV is best known for our comprehensive yearly scorecard that evaluates the environmental votes of individual state legislators. We also grade the environmental record of the Governor. In addition, we regularly alert the public and the media of key actions of elected officials and closely monitor agencies and executive appointments.">
   <meta property="og:description"
         content="Maryland League of Conservation Voters (LCV) is a non-partisan political voice for the environment.">
   <meta name="description"
@@ -20,7 +25,6 @@
   <link rel="stylesheet" href="css/styles-cleaned.css"/>
   <link rel="shortcut icon" href="http://mdlcv.org/images/favicon.ico">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css"/>
 
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
@@ -31,7 +35,7 @@
 
   <script type="text/javascript" src="js/vendor/handlebars.js"></script>
   <script src="maps/cb_2013_24_sldu_500k.json"></script>
-  <script src="maps/md_house_2013.js"></script>
+  <script src="maps/md_sldu_centroids.json"></script>
 
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
@@ -78,9 +82,17 @@
 
     <div style="margin: auto; max-width: 562px; padding-top: 12px;">
       <div class="row">
-        <h3 style="text-align: left; color:black; clear:both; margin:2em 0 0;clear:both;">2015 Maryland House Scorecard
-          Map        <div class="pull-right" style="float: right">
-            <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fbit.ly%2FMDLCVScore&amp;t=Maryland%20League%20of%20Conservation%20Voters%20Scorecard" target="_blank"><img style="float:right;" src="images/facebook-24-blue.png" alt="facebook-24-blue" width="25" height="25"></a> <a href="http://twitter.com/intent/tweet?text=Hold+your+legislators+accountable+via+the+MD+League+of+Conservation+Voters+Scorecard+(with+maps)+%23MDLCVscore&amp;url=http://bit.ly/MDLCVScore" target="_blank"><img style="float: right;" src="images/bird-24-lightblue.png" alt="bird-24-lightblue" width="25" height="25"></a></div></h3>
+        <h3 style="text-align: left; color:black; clear:both; margin:2em 0 0;clear:both;">2015 Maryland Senate
+          Scorecard Map
+          <span class="pull-right" style="float: right">
+            <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fbit.ly%2FMDLCVScore&amp;t=Maryland%20League%20of%20Conservation%20Voters%20Scorecard"
+               target="_blank"><img style="float:right;" src="images/facebook-24-blue.png" alt="facebook-24-blue"
+                                    width="25" height="25"></a> <a
+              href="http://twitter.com/intent/tweet?text=Hold+your+legislators+accountable+via+the+MD+League+of+Conservation+Voters+Scorecard+(with+maps)+%23MDLCVscore&amp;url=http://bit.ly/MDLCVScore"
+              target="_blank"><img style="float: right;" src="images/bird-24-lightblue.png" alt="bird-24-lightblue"
+                                   width="25" height="25"></a>
+          </span>
+        </h3>
         <ul id="nav1" class="pureCssMenu pureCssMenum" style="margin:0 0 1em 0; text-align: center">
           <li class="pureCssMenui0"><a class="pureCssMenui0" href="http://mdlcv.org/scorecards/2014-scorecard">2015
             Scorecard Home</a></li>
@@ -103,11 +115,11 @@
     <div class="row">
 
 
-
       <p style="text-align:center; margin-top:-6px; margin-bottom:4px"><img src="images/window-new.gif" alt="window-new"
                                                                             width="16" height="16"> Click Delegate dots
         to access Twitter, Facebook, and Email links.<br>Call the General Assembly switchboard to ask for your
         legislators: 800-492-7122!</p>
+
       <p style="text-align:center;"><img src="images/legend_horizontal_margin.png" alt="legend_horizontal_margin"
                                          width="597" height="22"></p>
 
@@ -133,15 +145,15 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 <script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/main-house.js"></script>
 <script type="text/javascript" src="js/vendor/tabletop.js"></script>
+<script src="js/main.js"></script>
 
 <script id="senate-template" type="text/x-handlebars-template">
   <div class="entry">
     <div style='margin-top:-5px; margin-bottom:3px; background-color: {{scoreColor}}; height:20px;'></div>
     <div class="body">
       <strong>District {{{district}}}</strong><br>
-      {{{fullname}}} ({{{party}}})<br>
+      {{{fullname}}} ({{{partyAbbrev}}})<br>
       {{#if phone}}{{{phone}}}<br>{{/if}}
 
       Simulated Lifetime Score: <strong>{{{lifetimescore}}}</strong><br>
@@ -163,7 +175,7 @@
       <button type='button' id='close' class='close'>&times;</button>
       <br>
 
-      <strong> {{{fullname}}} ({{{party}}})</strong><br>
+      <strong> {{{fullname}}} ({{{partyAbbrev}}})</strong><br>
       District {{{district}}}<br>
       {{#if phone}}{{{phone}}}<br>{{/if}}
       Fake data Lifetime Score: <strong>{{{lifetimescore}}}</strong><br>
