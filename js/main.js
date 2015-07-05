@@ -142,6 +142,9 @@ function resetHighlight(e) {
 
   if (!freeze) {
     clearInfobox();
+    layer.setStyle({
+      fillOpacity: 1
+    });
   }
 }
 
