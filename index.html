@@ -1,45 +1,128 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-      <meta http-equiv="content-type" content="text/html;charset=utf-8">
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <meta http-equiv="content-language" content="en">
-      <title>Maryland League of Conservation Voters | 2015 Senate Legislative Scorecard</title>
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta property="og:description" content="Maryland League of Conservation Voters (LCV) is a non-partisan political voice for the environment.">
-      <meta name="description" content="Maryland League of Conservation Voters (LCV) is a non-partisan political voice for the environment. Maryland LCV is best known for our comprehensive yearly scorecard that evaluates the environmental votes of individual state legislators. We also grade the environmental record of the Governor. In addition, we regularly alert the public and the media of key actions of elected officials and closely monitor agencies and executive appointments.">
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="content-language" content="en">
+  <title>Maryland League of Conservation Voters | 2015 Senate Legislative Scorecard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:description"
+        content="Maryland League of Conservation Voters (LCV) is a non-partisan political voice for the environment.">
+  <meta name="description"
+        content="Maryland League of Conservation Voters (LCV) is a non-partisan political voice for the environment. Maryland LCV is best known for our comprehensive yearly scorecard that evaluates the environmental votes of individual state legislators. We also grade the environmental record of the Governor. In addition, we regularly alert the public and the media of key actions of elected officials and closely monitor agencies and executive appointments.">
+  <meta property="og:description"
+        content="Maryland League of Conservation Voters (LCV) is a non-partisan political voice for the environment.">
+  <meta name="description"
+        content="Maryland League of Conservation Voters (LCV) is a non-partisan political voice for the environment. Maryland LCV is best known for our comprehensive yearly scorecard that evaluates the environmental votes of individual state legislators. We also grade the environmental record of the Governor. In addition, we regularly alert the public and the media of key actions of elected officials and closely monitor agencies and executive appointments.">
+  <link rel="stylesheet" href="css/styles-cleaned.css"/>
+  <link rel="shortcut icon" href="http://mdlcv.org/images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css"/>
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
-      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
 
-      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
 
-      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-      <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+  <script type="text/javascript" src="js/vendor/handlebars.js"></script>
+  <script src="maps/cb_2013_24_sldu_500k.json"></script>
+  <script src="maps/md_sldu_centroids.json"></script>
 
-      <script type="text/javascript" src="js/vendor/handlebars.js"></script>
-      <script src="maps/cb_2013_24_sldu_500k.json"></script>
-      <script src="maps/md_sldu_centroids.json"></script>
+  <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body id="dummybodyid">
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    </head>
-    <body>
+<div class="wrapper">
+  <!-- wides go inside wrapper but outside outer and inner -->
+  <div class="wide1">
+    <div class="moduletable">
+      <ul id="mainleveltopnav">
+        <li><a href="http://mdlcv.org/news-media/" class="mainleveltopnav">News &amp; Media</a></li>
+        <li><a href="http://mdlcv.org/calendar/" class="mainleveltopnav">Calendar</a></li>
+      </ul>
+    </div>
+  </div>
 
-    <div class="container">
+  <div class="wide2">
+    <a href="http://mdlcv.org"><img src="images/banner1.gif" width="668" height="77" border="0"
+                                    alt="MDLCV logo and name banner"></a>
+  </div>
+
+  <div class="wide3">
+    <div class="mainnav">
+      <div class="moduletable">
+        <ul id="mainlevelmainnav">
+          <li><a href="http://mdlcv.org" class="mainlevelmainnav" id="active_menumainnav">MDLCV Home</a>
+          </li>
+          <li><a href="http://mdlcv.org/about/" class="mainlevelmainnav">About</a></li>
+          <li><a href="http://mdlcv.org/issues" class="mainlevelmainnav">Issues</a></li>
+          <li><a href="https://www.thedatabank.com/dpg/288/donate.asp?formid=donate" class="mainlevelmainnav">Donate</a>
+          </li>
+          <li><a href="http://mdlcv.org/scorecards/" class="mainlevelmainnav">Scorecards</a></li>
+          <li><a href="http://mdlcv.org/elections" class="mainlevelmainnav">Elections</a></li>
+          <li><a href="http://mdlcv.org/county-chapters/anne-arrundel/" class="mainlevelmainnav">County Chapters</a>
+          </li>
+          <li><a href="http://mdlcv.org/latino-outreach-program/2014-03-10-20-56-25" class="mainlevelmainnav">Latino
+            Outreach</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end row 3 -->
+  <div class="container">
+
+    <div style="margin: auto; max-width: 562px; padding-top: 12px;">
+      <div class="row">
+        <h3 style="text-align: left; color:black; clear:both; margin:2em 0 0;clear:both;">2015 Maryland Senate
+          Scorecard Map
+          <span class="pull-right" style="float: right">
+            <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fbit.ly%2FMDLCVScore&amp;t=Maryland%20League%20of%20Conservation%20Voters%20Scorecard"
+               target="_blank"><img style="float:right;" src="images/facebook-24-blue.png" alt="facebook-24-blue"
+                                    width="25" height="25"></a> <a
+              href="http://twitter.com/intent/tweet?text=Hold+your+legislators+accountable+via+the+MD+League+of+Conservation+Voters+Scorecard+(with+maps)+%23MDLCVscore&amp;url=http://bit.ly/MDLCVScore"
+              target="_blank"><img style="float: right;" src="images/bird-24-lightblue.png" alt="bird-24-lightblue"
+                                   width="25" height="25"></a>
+          </span>
+        </h3>
+        <ul id="nav1" class="pureCssMenu pureCssMenum" style="margin:0 0 1em 0; text-align: center">
+          <li class="pureCssMenui0"><a class="pureCssMenui0" href="http://mdlcv.org/scorecards/2014-scorecard">2015
+            Scorecard Home</a></li>
+          <li class="pureCssMenui0"><a class="pureCssMenui0"
+                                       href="http://mdlcv.org/scorecards/scorecards/2015-maryland-house-scorecard-map">House
+            Map</a></li>
+          <li class="pureCssMenui0"><a class="pureCssMenui0"
+                                       href="http://mdlcv.org/scorecards/scorecards/2015-maryland-senate-scorecard-map">Senate
+            Map</a></li>
+          <li class="pureCssMenui0"><a class="pureCssMenui0" onclick="return false;" href="/"><span>Map Help</span>
+            <span class="pop"> Delegate dots are randomly located within the appropriate district.<br><strong>Mouse
+              over</strong> dots to see lifetime and 2015 conservation scores.<br><strong>Click</strong> dots to access Twitter, Facebook, and Email.</span></a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <!--<div style="left: 728px; top: 28px; width: 60px; position: absolute;">-->
+
     <div class="row">
-      <h2>Maryland League of Conservation Voters  <br><small>State Senate Scorecard Map</small></h2>
+
+
+      <p style="text-align:center; margin-top:-6px; margin-bottom:4px"><img src="images/window-new.gif" alt="window-new"
+                                                                            width="16" height="16"> Click Delegate dots
+        to access Twitter, Facebook, and Email links.<br>Call the General Assembly switchboard to ask for your
+        legislators: 800-492-7122!</p>
+
+      <p style="text-align:center;"><img src="images/legend_horizontal_margin.png" alt="legend_horizontal_margin"
+                                         width="597" height="22"></p>
+
     </div>
     <div class="row">
       <div id="main" class="col-md-9">
@@ -50,58 +133,73 @@
     <div class="row">
       <div id="content"></div>
     </div>
-    </div><!-- /container -->
+  </div>
+</div>
+<!-- /container -->
 
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/vendor/tabletop.js"></script>
-    <script src="js/main.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/vendor/tabletop.js"></script>
+<script src="js/main.js"></script>
 
-        <script id="senate-template" type="text/x-handlebars-template">
-          <div class="entry" >
-          <div style='margin-top:-5px; margin-bottom:3px; background-color: {{scoreColor}}; height:20px;'></div>
-            <div class="body">
-              <strong>District {{{district}}}</strong><br>
-              {{{fullname}}} ({{{partyAbbrev}}})<br>
-              {{#if phone}}{{{phone}}}<br>{{/if}}
+<script id="senate-template" type="text/x-handlebars-template">
+  <div class="entry">
+    <div style='margin-top:-5px; margin-bottom:3px; background-color: {{scoreColor}}; height:20px;'></div>
+    <div class="body">
+      <strong>District {{{district}}}</strong><br>
+      {{{fullname}}} ({{{partyAbbrev}}})<br>
+      {{#if phone}}{{{phone}}}<br>{{/if}}
 
-              Simulated Lifetime Score: <strong>{{{lifetimescore}}}</strong><br>
-              Mock 2015 Score: <strong>{{{score2015}}}</strong><br>
-              {{{notes}}}<br>
-              {{#if twitter}}<a  target='_new' href="http://twitter.com/{{{twitter}}}"><i class="icon-twitter icon-2x custom-icon"></i></a>{{/if}} {{#if facebook}} <a  target='_new' href="{{{facebook}}}"><i class="icon-facebook icon-2x custom-icon"></i></a> {{/if}}{{#if email}}<a  target='_new' href="mailto:{{{email}}}"><i class="icon-envelope icon-2x custom-icon"></i></a>{{/if}}
-            </div>
-          </div>
-        </script>
+      Lifetime Score: <strong>{{{lifetimescore}}}</strong><br>
+      2015 Score: <strong>{{{score2015}}}</strong><br>
+      {{{notes}}}<br>
+      {{#if email}}<a target='_blank' href="mailto:{{{email}}}"><i class="icon-envelope icon-2x custom-icon"></i></a>{{/if}}
 
-        <script id="senate-template-infobox" type="text/x-handlebars-template">
-          <div class="entry parent" style="padding:12px; background-color: {{scoreColor}};">
-            <div class="body child">
-              <button type='button' id='close' class='close'>&times;</button><br>
+      <a href="http://twitter.com/intent/tweet?text=2015%20Maryland%20environmental%20legislative%20scorecard%20on%20a%20map.%20How%20did%20yours%20do%3F%20(from%20%40MDLCV%20)&amp;url=http://bit.ly/MDLCVScore" target="_blank"><i
+          class="icon-twitter icon-2x custom-icon"></i></a>
+      <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fbit.ly%2FMDLCVScore&amp;t=Maryland%20League%20of%20Conservation%20Voters%20Scorecard" target="_blank"><i
+          class="icon-facebook icon-2x custom-icon"></i></a>
+    </div>
+  </div>
+</script>
 
-              <strong> {{{fullname}}} ({{{partyAbbrev}}})</strong><br>
-              District {{{district}}}<br>
-              {{#if phone}}{{{phone}}}<br>{{/if}}
-              Fake data Lifetime Score: <strong>{{{lifetimescore}}}</strong><br>
-              Fake data 2015 Score: <strong>{{{score2015}}}</strong><br>
-              {{{notes}}}<br>
-              {{#if twitter}}<a  target='_new' href="http://twitter.com/{{{twitter}}}"><i class="icon-twitter icon-2x custom-icon"></i></a>{{/if}} {{#if facebook}} <a  target='_new' href="{{{facebook}}}"><i class="icon-facebook icon-2x custom-icon"></i></a> {{/if}}{{#if email}}<a  target='_new' href="mailto:{{{email}}}"><i class="icon-envelope icon-2x custom-icon"></i></a>{{/if}}
-            </div>
-          </div>
-        </script> <!-- /container -->
+<script id="senate-template-infobox" type="text/x-handlebars-template">
+  <div class="entry parent" style="padding:12px; background-color: {{scoreColor}};">
+    <div class="body child">
+      <button type='button' id='close' class='close'>&times;</button>
+      <br>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <!--<script>-->
-            <!--(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=-->
-            <!--function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;-->
-            <!--e=o.createElement(i);r=o.getElementsByTagName(i)[0];-->
-            <!--e.src='//www.google-analytics.com/analytics.js';-->
-            <!--r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));-->
-            <!--ga('create','UA-XXXXX-X');ga('send','pageview');-->
-        <!--</script>-->
-    </body>
+      <strong> {{{fullname}}} ({{{partyAbbrev}}})</strong><br>
+      District {{{district}}}<br>
+      {{#if phone}}{{{phone}}}<br>{{/if}}
+      Lifetime Score: <strong>{{{lifetimescore}}}%</strong><br>
+      2015 Score: <strong>{{{score2015}}}%</strong><br>
+      {{{notes}}}<br>
+      {{#if email}}<a target='_blank' href="mailto:{{{email}}}"><i class="icon-envelope icon-2x custom-icon"></i></a>{{/if}}
+
+      <a href="http://twitter.com/intent/tweet?text=2015%20Maryland%20environmental%20legislative%20scorecard%20on%20a%20map.%20How%20did%20yours%20do%3F%20(from%20%40MDLCV%20)&amp;url=http://bit.ly/MDLCVScore" target="_blank"><i
+          class="icon-twitter icon-2x custom-icon"></i></a>
+      <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fbit.ly%2FMDLCVScore&amp;t=Maryland%20League%20of%20Conservation%20Voters%20Scorecard" target="_blank"><i
+          class="icon-facebook icon-2x custom-icon"></i></a>
+    </div>
+  </div>
+</script>
+<!-- /container -->
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>-->
+<!--(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=-->
+<!--function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;-->
+<!--e=o.createElement(i);r=o.getElementsByTagName(i)[0];-->
+<!--e.src='//www.google-analytics.com/analytics.js';-->
+<!--r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));-->
+<!--ga('create','UA-XXXXX-X');ga('send','pageview');-->
+<!--</script>-->
+</body>
 </html>
