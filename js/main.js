@@ -49,10 +49,10 @@ function showInfo(data, tabletop) {
   //          processJSON(tabletop.sheets("Sheet1").all());
 }
 function getColor(score) {
-  return score > 80 ? '#4EAB07' :
-    score > 60 ? '#82e0c3' :
-      score > 40 ? '#FEF200' :
-        score > 20 ? '#FDC300' :
+  return score > 99 ? '#4EAB07' :
+    score > 74 ? '#82e0c3' :
+      score > 49 ? '#FEF200' :
+        score > 24 ? '#FDC300' :
           score > 0 ? '#FC8400' :
             'rgb(255,0,0)';
 }
