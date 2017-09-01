@@ -2,7 +2,6 @@
 @media screen and (max-width:767px){.nvregion{padding:15px}}
 
 
-
 html {
 }
 
@@ -20,9 +19,13 @@ header .container {
 }
 
 header a.logo img, header a.logo {
-    width: 300px
+    width: 300px;
 }
 
+header a.logo img {
+    padding: 10px;
+    background: white;
+}
 section.navigation .container {
     width: auto
 }
@@ -105,7 +108,9 @@ section.navigation .container {
 
 @media (min-width: 992px) {
     header a.logo {
-        /*position: absolute*/
+        position: absolute;
+        left: -90px;
+        top:14px;
     }
 }
 
