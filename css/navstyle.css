@@ -3,7 +3,6 @@
 
 
 
-
 html {
 }
 
@@ -312,7 +311,7 @@ img {
 }
 @media (min-width: 768px) {
     nav>ul.navbar-nav {
-        /*float: right;*/
+        float: right;
     }
     .nvregion {
         padding:20px 0;
