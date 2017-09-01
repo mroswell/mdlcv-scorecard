@@ -48,9 +48,9 @@ section.navigation .container {
 }
 
 @media screen and (min-width: 600px) {
-    /*header a.logo img {*/
+    header a.logo img {
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3)
-    /*}*/
+    }
 
     /*.hero {*/
         /*min-height: 400px*/
@@ -106,7 +106,7 @@ section.navigation .container {
 
 @media (min-width: 992px) {
     header a.logo {
-        position: absolute
+        /*position: absolute*/
     }
 }
 
@@ -312,7 +312,7 @@ img {
 }
 @media (min-width: 768px) {
     nav>ul.navbar-nav {
-        float: right;
+        /*float: right;*/
     }
     .nvregion {
         padding:20px 0;
