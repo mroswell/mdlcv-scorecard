@@ -210,25 +210,29 @@ li { padding: 0 0 1em 0; margin: 0;}
 
 a:link {
     text-decoration: none;
-    font-family: arial,verdana,helvetica,sans-serif;
+    font-family: Montserrat, arial,verdana,helvetica,sans-serif;
+    font-size: 14px;
     color: #00c;
 }
 
 a:visited {
     text-decoration: none;
-    font-family: arial,verdana,helvetica,sans-serif;
+    font-family: Montserrat, arial,verdana,helvetica,sans-serif;
+    font-size: 14px;
     color: #00c;
 }
 
 a:hover {
     text-decoration: none;
-    font-family: arial,verdana,helvetica,sans-serif;
+    font-family: Montserrat, arial,verdana,helvetica,sans-serif;
+    font-size: 14px;
     color: #00c;
 }
 
 a:active {
     text-decoration: none;
-    font-family: arial,verdana,helvetica,sans-serif;
+    font-family: Montserrat, arial,verdana,helvetica,sans-serif;
+    font-size: 14px;
     color: #00c;
 }
 
