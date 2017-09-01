@@ -109,8 +109,8 @@ section.navigation .container {
 @media (min-width: 992px) {
     header a.logo {
         position: absolute;
-        left: -90px;
-        top:14px;
+        left: -75px;
+        top:7px;
     }
 }
 
@@ -195,7 +195,7 @@ ul li.expanded {
     padding: 6px 20px;
 }
 .nav>li>a:hover, .nav>li>a:focus {
-    background-color: #d3d3d3;
+    background-color: #85260C;
 }
 /* ----- Secondary Navigation -------- */
 /* ----- Breadcrumbs ----------------- */
@@ -338,10 +338,71 @@ img {
     }
 }
 
-.prim{color:#754200}.primary{background-color:#754200;color:#fff}.secondary{background-color:#b59a00;color:#fff}.primary a,.secondary a{color:#fff}
+/*.prim{color:#754200}.primary{background-color:#754200;color:#fff}.secondary{background-color:#b59a00;color:#fff}.primary a,.secondary a{color:#fff}*/
 
-.nav .caret {
+.prim {
+    color: #754200;
+}
+
+.primary {
+    background-color: #754200;
+    color: #fff
+}
+
+.secondary {
+    background-color: #b59a00;
+    color: #fff
+}
+
+/*.tertiary {*/
+    /*background-color: #d44730;*/
+    /*color: #fff*/
+/*}*/
+
+.quaternary {
+    background-color: #666;
+    color: #fff
+}
+
+.quinary {
+    background-color: #fffcfc;
+    color: #333
+}
+
+.quinary a {
+    color: #754200
+}
+
+.primary a, .secondary a, .tertiary a {
+    color: #fff
+}
+
+.quaternary a {
+    color: #745353
+}
+
+.nav .caret, .nav a:hover .caret {
     border-top-color: #FFFFFF;
             /*#428bca;*/
-    border-bottom-color: #FFFFFF;f
+    border-bottom-color: #FFFFFF;
 }
+
+.navbar-nav>li>a  {padding-bottom: 0;}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: #85260c;
+    color:white;
+}
+
+
+.nav .open>a,.nav .open>a:hover,.nav .open>a:focus {
+   background-color: #952b0d;
+   color:white;
+}
+
+.nav .open>a .caret, .nav .open>a:hover .caret,.nav .open>a:focus .caret{
+    border-top-color: white;
+    border-bottom-color: white;
+  }
