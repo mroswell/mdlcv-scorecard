@@ -1,0 +1,343 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@media screen and (max-width:767px){.nvregion{padding:15px}}
+
+
+
+
+html {
+}
+
+body {
+    font-family: 'Montserrat', sans-serif
+}
+
+a:hover {
+    opacity: 0.8;
+    text-decoration: none
+}
+
+header .container {
+    position: relative
+}
+
+header a.logo img, header a.logo {
+    width: 300px
+}
+
+section.navigation .container {
+    width: auto
+}
+
+.navbar-nav > li > a {
+    text-transform: uppercase
+}
+
+.hero {
+    background-size: cover
+}
+
+.nvregion .container {
+    padding-right: 0;
+    padding-left: 0
+}
+
+@media screen and (max-width: 599px) {
+    .hero {
+        min-height: 250px
+    }
+}
+
+@media screen and (min-width: 600px) {
+    /*header a.logo img {*/
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3)
+    /*}*/
+
+    /*.hero {*/
+        /*min-height: 400px*/
+    /*}*/
+}
+
+@media screen and (max-width: 767px) {
+    header.header {
+        margin-top: 52px;
+        padding: 15px
+    }
+
+    .nvregion {
+        padding: 15px
+    }
+
+    .hero {
+        background-size: cover
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-header {
+        float: none
+    }
+
+    .navbar-nav > li > a {
+        text-align: center
+    }
+
+    section.navigation {
+        margin-top: 30px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    nav > ul.navbar-nav {
+        clear: both;
+        float: none;
+        display: table;
+        width: 100%
+    }
+
+    nav > ul.navbar-nav > li {
+        float: none
+    }
+
+    nav > ul.navbar-nav > li.leaf {
+        float: none;
+        display: table-cell
+    }
+}
+
+@media (min-width: 992px) {
+    header a.logo {
+        position: absolute
+    }
+}
+
+/* Optionally, add your own components here.
+@import "print.css";
+*/
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+/* THEME OPTIONS ************************** */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0 !important;
+}
+/* GLOBAL ********************************* */
+/* ----- Body ------------------------ */
+html {
+    font-size:100%;
+}
+body {
+
+    background-color: #f6efe6;
+}
+/* -----
+.primary {background-color:#3182B0;}
+.secondary {background-color:#113A77;}
+.tertiary {background-color:#C4C4C4;}
+.quaternary {background-color:#BA1A20;}
+.quinary {background-color:#c3c3c3;}
+.senary {background-color:#e2e2e2;}
+.septenary {background-color:#cccccc;}
+.octonary {background-color:#e0e0e0;}
+------- */
+
+/* ----- Custom Fonts ---------------- */
+/* ----- Text ------------------------ */
+
+/* ----- Links ----------------------- */
+/* ----- Lists ----------------------- */
+nav ul li  {
+    list-style:none;
+    list-style-type: none;
+}
+/* ----- Tables ---------------------- */
+
+/* ----- Forms ----------------------- */
+/* HEADER ********************************* */
+/* ----- Header Region --------------- */
+/* ----- Search Box ------------------ */
+/* ----- Logo ------------------------ */
+/* ----- Site Title and Slogan ------- */
+header.header {
+    margin:0;
+    padding:0;
+    position: relative;
+}
+header a.logo {
+    margin: 0;
+    padding:0;
+    width: auto;
+}
+header a.logo:hover {
+    opacity:1;
+}
+header a.logo img {
+    max-height: initial;
+}
+.container>.navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* NAVIGATION ***************************** */
+/* ----- Main Navigation ------------- */
+ul li.expanded {
+    margin: 0;
+}
+.dropdown-menu>li>a  {
+    padding: 6px 20px;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: #d3d3d3;
+}
+/* ----- Secondary Navigation -------- */
+/* ----- Breadcrumbs ----------------- */
+/* ----- First Sidebar Menu Blocks --- */
+/* ----- Second Sidebar Menu Blocks -- */
+/* ----- Admin Menu ------------------ */
+/* ----- Pager Nav ------------------- */
+/* ----- REPONSIVE NAVIGATION -------- */
+nav#menu.bigslide {
+    position: fixed;
+    left: -15.625em; /*left or right and the width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
+    z-index:700;
+}
+/* CONTENT ********************************** */
+img {
+    height: auto;
+    /*width: 100%;*/
+}
+/* VIEWS ********************************** */
+
+/* ----- Search Results -------------- */
+
+/* CONTAINERS ***************************** */
+/* HERO ***************************** */
+.hero {
+    position: relative;
+}
+
+/* OBERON ***************************** */
+
+/* actiontag Quicksignup 	*********************************** */
+
+/* Quicksignup 	*********************************** */
+
+/* nvtag Quicksignup 	*********************************** */
+
+
+/* Contribution Forms ***************************** */
+/* Featured  ****************************** */
+
+/* Featured 1 ***************************** */
+
+/* Featured 2 ***************************** */
+
+/* actioncenter ***************************** */
+.dropdown-menu>li>a {
+    padding: 11px;
+}
+
+/* ----- Blocks ---------------------- */
+/* Social ***************************** */
+/* ----- Wells ----------------------- */
+/* ----- Callouts and Blockquotes ---- */
+
+/* ----- Pullquote Text -------------- */
+/* POSTCARD LAYOUTS ********************** */
+
+/* IMAGES ******************************** */
+
+/* ICONS ********************************* */
+
+/* FOOTER ********************************* */
+
+/* HELPER CLASSES ************************ */
+/* ----- Style ----------------------- */
+
+/* ----- Positioning ----------------- */
+/* ----- Sizing ---------------------- */
+
+/* GENERAL OVERRIDES ********************* */
+/* ----- Bootstrap Overrides --------- */
+/* ----- Field Collection Overrides -- */
+/* ----- Field Label Overrides ------- */
+/* ADMINISTRATION ************************ */
+/* ----- Admin ----------------------- */
+/* ----- User Block ------------------ */
+
+/* MEDIA QUERIES ************************* */
+/* ----- Responsive ------------------ */
+/* ----- Print ----------------------- */
+
+@media screen and (max-width: 599px){
+    img,
+    header a.logo img {
+        height:auto;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px){
+    header.header {
+        margin-top:62px;
+    }
+    header a.logo {
+        float: none!important;
+        display: block;
+        margin: 0 auto;
+    }
+    header a.logo img {
+        margin:0 auto;
+    }
+    section.navigation {
+        display:none;
+    }
+    .nvregion  {
+        padding:10px;
+    }
+    .hero {
+        padding:10px 0;
+    }
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .navbar-nav {
+        margin: 6px 0 0 0;
+    }
+}
+@media (min-width: 768px) {
+    nav>ul.navbar-nav {
+        float: right;
+    }
+    .nvregion {
+        padding:20px 0;
+    }
+    nav#menu.bigslide {
+        display:none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    ul.navbar-nav > li.dropdown {
+        float: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar-nav > li > a {
+        padding: 15px 11px;
+    }
+}
+
+.prim{color:#754200}.primary{background-color:#754200;color:#fff}.secondary{background-color:#b59a00;color:#fff}.primary a,.secondary a{color:#fff}
+
+.nav .caret {
+    border-top-color: #FFFFFF;
+            /*#428bca;*/
+    border-bottom-color: #FFFFFF;f
+}
