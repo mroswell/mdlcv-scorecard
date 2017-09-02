@@ -2,13 +2,6 @@
 @media screen and (max-width:767px){.nvregion{padding:15px}}
 
 
-html {
-}
-
-body {
-    font-family: 'Montserrat', sans-serif
-}
-
 a:hover {
     opacity: 0.8;
     text-decoration: none
@@ -54,9 +47,6 @@ section.navigation .container {
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3)
     }
 
-    /*.hero {*/
-        /*min-height: 400px*/
-    /*}*/
 }
 
 @media screen and (max-width: 767px) {
@@ -134,7 +124,7 @@ html {
     font-size:100%;
 }
 body {
-
+    font-family: 'Montserrat', sans-serif
     background-color: #f6efe6;
 }
 /* -----
@@ -148,22 +138,15 @@ body {
 .octonary {background-color:#e0e0e0;}
 ------- */
 
-/* ----- Custom Fonts ---------------- */
-/* ----- Text ------------------------ */
-
-/* ----- Links ----------------------- */
 /* ----- Lists ----------------------- */
 nav ul li  {
     list-style:none;
     list-style-type: none;
 }
-/* ----- Tables ---------------------- */
 
 /* ----- Forms ----------------------- */
 /* HEADER ********************************* */
-/* ----- Header Region --------------- */
-/* ----- Search Box ------------------ */
-/* ----- Logo ------------------------ */
+
 /* ----- Site Title and Slogan ------- */
 header.header {
     margin:0;
@@ -197,12 +180,7 @@ ul li.expanded {
 .nav>li>a:hover, .nav>li>a:focus {
     background-color: #85260C;
 }
-/* ----- Secondary Navigation -------- */
-/* ----- Breadcrumbs ----------------- */
-/* ----- First Sidebar Menu Blocks --- */
-/* ----- Second Sidebar Menu Blocks -- */
-/* ----- Admin Menu ------------------ */
-/* ----- Pager Nav ------------------- */
+
 /* ----- REPONSIVE NAVIGATION -------- */
 nav#menu.bigslide {
     position: fixed;
@@ -215,9 +193,6 @@ img {
     height: auto;
     /*width: 100%;*/
 }
-/* VIEWS ********************************** */
-
-/* ----- Search Results -------------- */
 
 /* CONTAINERS ***************************** */
 /* HERO ***************************** */
@@ -225,54 +200,12 @@ img {
     position: relative;
 }
 
-/* OBERON ***************************** */
-
-/* actiontag Quicksignup 	*********************************** */
-
-/* Quicksignup 	*********************************** */
-
-/* nvtag Quicksignup 	*********************************** */
-
-
-/* Contribution Forms ***************************** */
-/* Featured  ****************************** */
-
-/* Featured 1 ***************************** */
-
-/* Featured 2 ***************************** */
 
 /* actioncenter ***************************** */
 .dropdown-menu>li>a {
     padding: 11px;
 }
 
-/* ----- Blocks ---------------------- */
-/* Social ***************************** */
-/* ----- Wells ----------------------- */
-/* ----- Callouts and Blockquotes ---- */
-
-/* ----- Pullquote Text -------------- */
-/* POSTCARD LAYOUTS ********************** */
-
-/* IMAGES ******************************** */
-
-/* ICONS ********************************* */
-
-/* FOOTER ********************************* */
-
-/* HELPER CLASSES ************************ */
-/* ----- Style ----------------------- */
-
-/* ----- Positioning ----------------- */
-/* ----- Sizing ---------------------- */
-
-/* GENERAL OVERRIDES ********************* */
-/* ----- Bootstrap Overrides --------- */
-/* ----- Field Collection Overrides -- */
-/* ----- Field Label Overrides ------- */
-/* ADMINISTRATION ************************ */
-/* ----- Admin ----------------------- */
-/* ----- User Block ------------------ */
 
 /* MEDIA QUERIES ************************* */
 /* ----- Responsive ------------------ */
@@ -403,6 +336,7 @@ img {
 }
 
 .nav .open>a .caret, .nav .open>a:hover .caret,.nav .open>a:focus .caret{
-    border-top-color: white;
-    border-bottom-color: white;
+    border-color:#FFF;
+    /*border-top-color: #FFFF;*/
+    /*border-bottom-color: #FFF;*/
   }

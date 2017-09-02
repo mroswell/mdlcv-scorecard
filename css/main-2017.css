@@ -1,12 +1,7 @@
-
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/** {*/
-/*@icon-font-path: "fonts/";*/
-/*}*/
+
 .btn-primary {background-color: #991B33;} /*#0B8973*/
 a:visited {color:#0B8973;}
 a:visited {color:#754200;}
@@ -120,42 +115,6 @@ p.close {margin-top: -4px;margin-right: -8px; }
     float:left;
 }
 
-
-.my-legend .legend-title {
-    text-align: left;
-    margin-bottom: 8px;
-    font-weight: bold;
-    font-size: 90%;
-}
-.my-legend .legend-scale ul {
-    margin: 0;
-    padding: 0;
-    float: left;
-    list-style: none;
-}
-.my-legend .legend-scale ul li {
-    display: block;
-    float: left;
-    width: 79px;
-    margin-bottom: 6px;
-    text-align: center;
-    font-size: 80%;
-    list-style: none;
-}
-.my-legend ul.legend-labels li span {
-    display: block;
-    float: left;
-    height: 15px;
-    width: 79px;
-}
-.my-legend .legend-source {
-    font-size: 70%;
-    color: #999;
-    clear: both;
-}
-.my-legend a {
-    color: #777;
-}
 
 .icon-star {
     font-weight: bold;
@@ -345,9 +304,9 @@ ul.pureCssMenu li{
     margin:1px 6px 6px 1px;
     font-size:0px;
 }
-UNUSEDul.pureCssMenu a:active, ul.pureCssMenu a:focus {
-    outline-style:none;
-}
+/*UNUSEDul.pureCssMenu a:active, ul.pureCssMenu a:focus {*/
+    /*outline-style:none;*/
+/*}*/
 ul.pureCssMenu a, ul.pureCssMenu li.dis a:hover, ul.pureCssMenu li.sep a:hover {
     display:block;
     vertical-align:middle;
@@ -410,7 +369,7 @@ ul.pureCssMenu span{
     background-position:right center;
     background-repeat: no-repeat;
     padding-right:8px;}
-ul.pureCssMenu li:hover>a>span{	background-image:url(./images/arrv_white_2.gif);
+ul.pureCssMenu li:hover>a>span{	background-image:url(../images/arrv_white_2.gif);
 }
 
 ul.pureCssMenu li a.pureCssMenui0{
