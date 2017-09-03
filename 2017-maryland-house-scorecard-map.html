@@ -11,12 +11,17 @@
   <head profile="http://www.w3.org/1999/xhtml/vocab"><script type="text/javascript" async="" src="http://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-5L2FSL&amp;l=atLayer"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<style>-->
+      <!--@import url("http://www.mdlcv.org/sites/all/themes/bootstrap/css/overrides.css?oq7qd8");-->
+      <!--@import url("http://www.mdlcv.org/profiles/accelerator2015/themes/bs3base/css/nv2015.css?oq7qd8");-->
+      <!--@import url("http://www.mdlcv.org/profiles/accelerator2015/themes/bs3base/css/bs3base.css?oq7qd8");-->
+      <!--@import url("http://www.mdlcv.org/profiles/accelerator2015/themes/nature/css/style.css?oq7qd8");-->
+    <!--/style-->
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="http://www.mdlcv.org/sites/mdlcv/files/mdlcv%20favcon_0.png" type="image/png">
 
     <meta property="og:site_name" content="Maryland League of Conservation Voters">
 
-    <link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" media="all">
 
     <!-- HTML5 element support for IE6-8 -->
     <!--[if lt IE 9]>
@@ -34,8 +39,6 @@
     <script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-4427283-1", {"cookieDomain":"auto"});ga("send", "pageview");</script>
     <script src="//d1aqhv4sn5kxtx.cloudfront.net/actiontag/at.js"></script>
 
-    <script src="http://www.mdlcv.org/profiles/accelerator2015/themes/bs3base/js/bs3base.js?oq7qd8"></script>
-
 
   <meta http-equiv="content-type" content="text/html;charset=utf-8">
   <meta charset="utf-8">
@@ -52,7 +55,7 @@
   <meta property="og:image" content="http://s5.postimg.org/rr8ccffiv/Screen_Shot_2015_07_16_at_4_08_02_PM.png">
   <link rel="stylesheet" href="css/styles-cleaned-2017.css"/>
   <link rel="shortcut icon" href="http://mdlcv.org/mdlcv-favicon.png">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
   <!--<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>-->
 
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css"/>
@@ -60,7 +63,9 @@
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
 
   <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
-  <link rel="stylesheet" href="css/main-2017.css">
+    <link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" media="all">
+
+    <link rel="stylesheet" href="css/main-2017.css">
   <link rel="stylesheet" href="css/navstyle.css">
   <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
 
@@ -71,9 +76,14 @@
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   <script src="http://www.mdlcv.org/profiles/accelerator2015/themes/bs3base/js/bigSlide.js?oq7qd8"></script>
   <!--<script src="http://www.mdlcv.org/profiles/accelerator2015/themes/bs3base/js/jquery-1.8.2.min.js?oq7qd8"></script>-->
-</head>
+    <script src="http://www.mdlcv.org/profiles/accelerator2015/themes/bs3base/js/jquery.matchHeight-min.js?oq7qd8"></script>
+    <script src="http://www.mdlcv.org/profiles/accelerator2015/themes/bs3base/js/bs3base.js?oq7qd8"></script>
+  </head>
 <body>
 <div class="wrapper">
+  <div id="skip-link" class="element-invisible">
+    <a href="#main-content" class="element-invisible element-focusable prim">Skip to main content</a>
+  </div>
   <div class="head-top nvregion tertiary clearfix">
     <section class="responsivenav">
       <!-- Class "cbp-spmenu-open" gets applied to menu -->
@@ -233,7 +243,7 @@
 
 <script id="senate-template" type="text/x-handlebars-template">
   <div class="entry">
-    <div style='margin-top:-5px; margin-bottom:3px; background-color: {{scoreColor}}; height:20px;'></div>
+    <div style='margin-top:-5px; margin-bottom:18px; background-color: {{scoreColor}}; height:20px;'></div>
     <div class="body">
       <strong>District {{{district}}}</strong><br>
       {{{full_name}}} ({{{party}}})<br>
