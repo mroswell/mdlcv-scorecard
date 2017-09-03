@@ -1,8 +1,9 @@
 a:visited {color:#754200;}
 
-.wrapper {width:1100px;}
+/*.wrapper {width:1100px;}*/
 .container {
-    width:auto;
+    /*width:auto;*/
+    width:1100px;
 }
 
 #map {
