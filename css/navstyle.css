@@ -304,8 +304,8 @@ img {
         margin: 0 auto;
         /*background-color: #fff;*/
         text-align: left;
-
     }
+    fixwidth858 {width:858px;}
 }
 
 /*.prim{color:#754200}.primary{background-color:#754200;color:#fff}.secondary{background-color:#b59a00;color:#fff}.primary a,.secondary a{color:#fff}*/
