@@ -3,7 +3,7 @@ a:visited {color:#754200;}
 /*.wrapper {width:1100px;}*/
 .container {
     /*width:auto;*/
-    width:1100px;
+  /*  width:1100px;*/
 }
 
 #map {
@@ -71,9 +71,14 @@ a.menu-link {
 .head-top.nvregion {
   padding: 15px;
   position: fixed;
-  width: 96%;
+  width: 100%;
   top: 0;
   z-index: 700;
+}
+#content{
+
+    margin-left: 110px;
+
 }
 /*======================
 ADNAN ADDED END
@@ -163,7 +168,7 @@ ADNAN ADDED END
 .icon-2x {font-size: 1.7em;}
 
 .container {
-    width: 970px;
+  /* width: 970px;*/
 }
 
 .close {margin-top: -10px;margin-right: -8px; }
