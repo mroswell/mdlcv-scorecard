@@ -35,7 +35,7 @@ body {
 
 ul { padding: 0 2.5em 0 2.5em;  margin: 0; list-style-image: url('../images/triangle.gif'); list-style-type: disc;}
 
-li { padding: 0 0 1em 0; margin: 0;}
+li { padding: 0 0 0 0; margin: 0;}
 
 
 a:link {

@@ -358,7 +358,7 @@ img {
 }
 
 .navbar-nav > li > a {
-    padding-bottom: 0;
+    padding-bottom: 15px;
 }
 
 .navbar-default .navbar-nav > .open > a,
