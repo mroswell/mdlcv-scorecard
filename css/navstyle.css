@@ -86,7 +86,7 @@ section.navigation .container {
     nav > ul.navbar-nav {
         clear: both;
         float: none;
-        display: table;
+        display: inline-grid;
         width: 100%
     }
 
@@ -229,8 +229,8 @@ img {
 @media screen and (max-width: 599px) {
     img,
     header a.logo img {
-        height: auto;
-        width: 100%;
+  /*      height: auto;
+       width: 100%;*/
     }
 }
 
