@@ -35,7 +35,7 @@
     <script id="facebook-jssdk" src="//connect.facebook.net/en_EN/sdk.js#xfbml=1&amp;version=v2.3&amp;appId=579264578881928"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script type="text/javascript" src="http://www.mdlcv.org/profiles/accelerator2015/themes/bs3base/js/jquery-1.7.2.min.js"><\/script>')</script>
-    <script src="http://www.mdlcv.org/misc/jquery.once.js?v=1.2"></script>
+    <!--<script src="http://www.mdlcv.org/misc/jquery.once.js?v=1.2"></script>-->
     <script src="http://www.mdlcv.org/misc/drupal.js?oq7qd8"></script>
     <!--<script src="http://www.mdlcv.org/sites/all/libraries/fitvids/jquery.fitvids.js?oq7qd8"></script>-->
     <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>-->
@@ -80,7 +80,7 @@
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   <script src="http://www.mdlcv.org/profiles/accelerator2015/themes/bs3base/js/bigSlide.js?oq7qd8"></script>
   <!--<script src="http://www.mdlcv.org/profiles/accelerator2015/themes/bs3base/js/jquery-1.8.2.min.js?oq7qd8"></script>-->
-    <script src="http://www.mdlcv.org/profiles/accelerator2015/themes/bs3base/js/jquery.matchHeight-min.js?oq7qd8"></script>
+    <!--<script src="http://www.mdlcv.org/profiles/accelerator2015/themes/bs3base/js/jquery.matchHeight-min.js?oq7qd8"></script>-->
     <script src="http://www.mdlcv.org/profiles/accelerator2015/themes/bs3base/js/bs3base.js?oq7qd8"></script>
   </head>
 <body>
@@ -104,6 +104,14 @@
   <div class="container">
     <header class="header nvregion clearfix">
       <div>
+        <div id="social">
+          <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fscorecard.mdlcv.org&amp;t=Maryland%20League%20of%20Conservation%20Voters%20Scorecards"
+             target="_blank"><img style="float:right;" src="images/facebook-24-blue.png" alt="facebook-24-blue"
+                                  width="25" height="25"></a>
+          <a href="http://twitter.com/intent/tweet?text=NEW%21%20%40MDLCV%20interactive%20%23MDLCVScore%20map%2E%20How%20did%20your%20legislator%20do%3F%20%23MDGA17&amp;url=http://scorecard.mdlcv.org"
+                target="_blank"><img style="float: right;" src="images/bird-24-lightblue.png" alt="bird-24-lightblue"
+                                     width="25" height="25"></a>
+        </div>
         <div class="navbar-header">
           <a class="logo navbar-btn prim" href="/" title="Home">
             <img src="http://www.mdlcv.org/sites/mdlcv/files/mlcv_logo_rgb_1.jpg" alt="Home">
@@ -170,20 +178,12 @@
       </div>
     </header>
   </div>
-  <div class="container">
+  <div id="scorecard-nav" class="container">
     <div class="row">
-    <div class="col-md-10 col-md-offset-1 fixwidth858">
-        <h3 style="color:black; margin-left:12px;margin-top: 50px;">2017 Maryland House Scorecard
-          Map
-          <div class="pull-right" style="float: right">
-            <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fscorecard.mdlcv.org&amp;t=Maryland%20League%20of%20Conservation%20Voters%20Scorecards"
-               target="_blank"><img style="float:right;" src="images/facebook-24-blue.png" alt="facebook-24-blue"
-                                    width="25" height="25"></a> <a
-                  href="http://twitter.com/intent/tweet?text=NEW%21%20%40MDLCV%20interactive%20%23MDLCVScore%20map%2E%20How%20did%20your%20legislator%20do%3F%20%23MDGA17&amp;url=http://scorecard.mdlcv.org"
-              target="_blank"><img style="float: right;" src="images/bird-24-lightblue.png" alt="bird-24-lightblue"
-                                   width="25" height="25"></a></div>
-        </h3>
-        <ul id="nav1" class="pureCssMenu pureCssMenum" style="margin:0 0 1em 12px; text-align: center">
+    <div class="col-md-12 fixwidth858">
+        <h1>2017 Maryland House Scorecard Map</h1>
+      <div>
+        <ul id="nav1" class="pureCssMenu pureCssMenum">
           <li class="pureCssMenui0"><a class="pureCssMenui0"
                                        target="_parent" href="http://scorecard.mdlcv.org/2017-maryland-senate-scorecard-map.html">Senate Map</a></li>
           <li class="pureCssMenui0"><a class="pureCssMenui0"
@@ -203,6 +203,7 @@
               over</strong> dots to see lifetime and 2017 conservation scores.<br><strong>Click</strong> dots to access Email, Twitter, and Facebook links.</span></a>
           </li>
         </ul>
+      </div>
       </div>
     </div>
     <div class="row">

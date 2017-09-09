@@ -29,7 +29,6 @@ body {
 
 /* main menu */
 
-/*.moduletablemainnav {padding:0;margin:0;}*/
 
 /*h3 { font: bold 1em arial,verdana,helvetica,sans-serif; padding: 10px 0 3px 0; margin: 0; color: #0B8973;}*/
 
@@ -42,7 +41,6 @@ a:link {
     text-decoration: none;
     font-family: Montserrat, arial,verdana,helvetica,sans-serif;
     font-size: 14px;
-    /*color: #00c;*/
 }
 
 a:visited {
@@ -66,15 +64,6 @@ a:active {
     color: #00c;
 }
 
-
-/* -------------- Read More Links --------- */
-
-
-
-/* -------------- Right Column ---------------- */
-
-
-
 /* -------------- Homepage --------- */
 
 
@@ -90,20 +79,13 @@ ul { padding: 0;  margin: 0; list-style-image: url(../images/triangle.gif); list
 ul.pureCssMenu {
     display:block;
     zoom:1;
-    float: left;
+    /*float: left;*/
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/** {*/
-/*@icon-font-path: "fonts/";*/
-/*}*/
 
-/*.wrapper {width:1100px;}*/
-/*.container {*/
-    /*width:auto;*/
-/*}*/
 
 #map {
     height: 470px;
@@ -111,8 +93,8 @@ ul.pureCssMenu {
     margin-bottom: 40px;
 }
 body {
-    background: #0B8973; /*#FCFCBD;*/
-    font-family: "arial", "helvetica", sans-serif;
+    /*background: #0B8973; !*#FCFCBD;*!*/
+    /*font-family: "arial", "helvetica", sans-serif;*/
     /*padding-top: 50px;*/
     padding-bottom: 20px;
 

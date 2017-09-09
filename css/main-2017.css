@@ -184,9 +184,9 @@ ul.pureCssMenu {
     border-width:0px;
     border-style:solid;
 }ul.pureCssMenu {
-     display:block;
+     display:inline-block;
      zoom:1;
-     float: left;
+     /*float: left;*/
  }
 ul.pureCssMenu li{
     display:block;
@@ -271,4 +271,11 @@ ul.pureCssMenu span{
 }
 #nav1 a:hover .pop {
     visibility: visible;
+}
+
+h1 {
+    color: black;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
 }
