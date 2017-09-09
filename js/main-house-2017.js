@@ -13,7 +13,7 @@ var latitude = 38.9;
 var longitude = -77.28;
 var latLng = new L.LatLng(latitude, longitude);
 var sidebar = $('#sidebar');
-var map = L.map('map').setView(latLng, 8);
+var map = L.map('map', {scrollWheelZoom:false}).setView(latLng, 8);
 
 
 
@@ -81,8 +81,8 @@ var geoStyle = function(data) {
 
 function loadGeo(district) {
   var Hydda_Full = L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
-    minZoom: 7,
-    maxZoom: 10,
+      minZoom: 8,
+    maxZoom: 12,
     attribution: 'Tiles courtesy of <a href="http://openstreetmap.org/" target="_blank">OpenStreetMap </a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
 

@@ -13,7 +13,7 @@ var latitude = 38.9;
 var longitude = -77.28;
 var latLng = new L.LatLng(latitude, longitude);
 var sidebar = $('#sidebar');
-var map = L.map('map').setView(latLng, 8);
+var map = L.map('map', {scrollWheelZoom:false}).setView(latLng, 8);
 
 
 
