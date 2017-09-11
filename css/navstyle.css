@@ -407,3 +407,5 @@ img {
 #scorecard-nav ul li {
     display: inline;
 }
+
+img { outline: 0; max-width: 100%; height: auto; }
