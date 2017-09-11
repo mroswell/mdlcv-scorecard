@@ -25,7 +25,9 @@ $(document).ready(function() {
   Tabletop.init({
     key: public_spreadsheet_url,
     callback: showInfo,
-    parseNumbers: true
+    parseNumbers: true,
+      simpleSheet: true
+
   });
 });
 
