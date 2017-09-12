@@ -1,8 +1,3 @@
-
-//var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?key=0Ao3Ts9D8bHHpdDlXWVlhSl9UelVmSjV0NHJBUGxQbFE&output=html';
-//var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1fv-XHYGddsiirJaXMIP8A-TK36xfssjCnifWEzcJltc/pubhtml';
-// var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1Lw7EXXdXWfWKSSJFpoZYX3YFtpiWI7burJgaqqaE2jc/pubhtml';
-// var public_spreadsheet_url = '1fv6M6R9Ogo2TGAlxOKKgOouVBW7NilkCwppc4tpEFm8';
 var public_spreadsheet_url = '1wxCAStsUg_tiQcZGICkReZLWS9-4lSC5QWQ2v4Szvsg';
 var dist;
 var freeze;
@@ -14,8 +9,6 @@ var longitude = -77.28;
 var latLng = new L.LatLng(latitude, longitude);
 var sidebar = $('#sidebar');
 var map = L.map('map', {scrollWheelZoom:false}).setView(latLng, 8);
-
-
 
 function clearInfobox() {
   sidebar.html(' ');
@@ -38,15 +31,10 @@ function showInfo(data, tabletop) {
   app.infoboxTemplate = Handlebars.compile(sourcebox);
   $.each(tabletop.sheets("House2017").all(), function(i, member) {
     scoreColor = getColor(member.score2017);
-
     member['scoreColor'] = scoreColor;
-    member['partyAbbrev'] = member['party'].charAt(0);
     var html = template(member);
     $("#content").append(html);
     MDSenateDistricts[member.rownum] = member;
-      // console.log(MDSenateDistricts);
-      MDSenateDistricts[member.rownum].partyAbbrev = MDSenateDistricts[member.rownum].party.charAt(0).toUpperCase();
-
   });
   loadGeo();
   //          processJSON(tabletop.sheets("Sheet1").all());
@@ -62,8 +50,6 @@ function getColor(score) {
 
 var geoStyle = function(data) {
   var rownum = Number(data.properties.rownum);
-  // console.log("data", data);
-  // Sort out how to get at the SLDUST data.
   // console.log("geoStyle: ", Number(data.properties.SLDUST));
   var score = MDSenateDistricts[rownum].score2017;
   var scoreToColor = getColor(score);
@@ -81,7 +67,7 @@ var geoStyle = function(data) {
 
 
 function loadGeo(district) {
-  var Hydda_Full = L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
+  L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
       minZoom: 8,
     maxZoom: 12,
     attribution: 'Tiles courtesy of <a href="http://openstreetmap.org/" target="_blank">OpenStreetMap </a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -119,8 +105,6 @@ function highlightFeature(e) {
   var memberNumber = Number(layer.feature.properties.rownum);
   var memberDetail = MDSenateDistricts[memberNumber];
 
-  // This fills in the sidebar as you mouse around.
-  // NO STICKY CLICK
 
   if (!freeze) {
     html = app.infoboxTemplate(memberDetail);
@@ -158,15 +142,12 @@ function mapMemberDetailClick(e) {
   var member = memberDetailFunction(memberNumber);
 }
 
-
 function memberDetailFunction(memberNumber) {
   var districtDetail = MDSenateDistricts[memberNumber]
   var html = app.infoboxTemplate(districtDetail);
   $('#sidebar').html(html);
   // $('#sidebar').html(JSON.stringify(districtDetail));
 }
-
-
 
 
 $(document).on("click", "button", function(event) {
