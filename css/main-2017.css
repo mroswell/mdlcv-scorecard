@@ -1,29 +1,18 @@
 a:visited {color:#754200;}
 
-/*.wrapper {width:1100px;}*/
-.container {
-    /*width:auto;*/
-  /*  width:1100px;*/
-}
-
-#map {
-    height: 470px;
-    /*width: 900px;*/
-    margin-bottom: 40px;
-}
 body {
     font-family: "arial", "helvetica", sans-serif;
     padding-bottom: 20px;
 
 }
-/* ==========================================================================
+/* ==================================================
    Author's custom styles
-   ========================================================================== */
+   ================================================== */
 
 #map {
-    height: 404px;
-    /*width: 880px;*/
+    height: 430px;
     width:auto;
+    margin-bottom: 36px;
 }
 
 .popup-position {
@@ -82,7 +71,6 @@ a.menu-link {
 }
 /*======================
 ADNAN ADDED END
-
 ============================*/
 
 
@@ -98,36 +86,8 @@ ADNAN ADDED END
     height: 192px;
     padding: 15px;
     border: solid #E9E9E9 1px;
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
     background-color: #ffffff;
-    /*margin: -70px 0 0 -170px;*/
 }
-
-/*.entry-infobox, .entry-default-text {*/
-    /*float: right;*/
-    /*width: 230px;*/
-    /*border: solid black 1px;*/
-    /*padding: 17px;*/
-    /*background: white;*/
-    /*line-height: 1.1;*/
-/*}*/
-
-/*.entry-infobox a, .entry-default-text a {color: #991B33; #0B8973;}*/
-/*.entry-header {*/
-    /*font-weight:bold;*/
-    /*padding:3px;*/
-    /*background-color: #0B8973;!*#A6D96A;*!*/
-    /*color:white;*/
-    /*margin-top: .6em;*/
-    /*margin-bottom: .8em;*/
-/*}*/
-/*.entry-header p {*/
-    /*margin-bottom: 0;*/
-/*}*/
-
-/*.entry-infobox img {border: red 1px; display:block;  text-align: center;}*/
 
 
 .entry {
@@ -141,16 +101,6 @@ ADNAN ADDED END
     line-height: 1.4;
     font-size: 13.5px;
 }
-/*.entry-infobox {*/
-    /*float: right;*/
-    /*width: 220px;*/
-    /*border: solid black 1px;*/
-    /*height: 200px;*/
-    /*padding: 25px;*/
-    /*margin: 25px 10px 25px 25px;*/
-    /*background: white;*/
-    /*line-height: 1.1;*/
-/*}*/
 
 .custom-icon {
     margin-right:4px;
@@ -167,9 +117,6 @@ ADNAN ADDED END
 .icon-envelope {background-color:#c0c0c0;}
 .icon-2x {font-size: 1.7em;}
 
-.container {
-  /* width: 970px;*/
-}
 
 .close {margin-top: -10px;margin-right: -8px; }
 
@@ -200,9 +147,6 @@ ul.pureCssMenu a {
     display:block;
     vertical-align:middle;
     background-color: #754200;
-    /*#991b33;*/
-    /*#000000;*/
-    /*#0B8973;*/
     border-width:0px;
     border-color:#FCEEB0;
     border-style:solid;
@@ -225,9 +169,6 @@ ul.pureCssMenu li:hover{
 }
 ul.pureCssMenu li:hover>a{
     background-color: #754200;
-    /*#991B33;*/
-    /*#1B9A84;*/
-    /*border-color:#4C99AB;*/
     border-style:solid;
     font:normal 12px Arial;
     color: #FFFFFF;
@@ -236,8 +177,6 @@ ul.pureCssMenu li:hover>a{
 ul.pureCssMenu li a:hover{
     position:relative;
     background-color: #000000;
-    /*#754200;*/
-    /*#097361;*/
     border-color:#4C99AB;
     border-style:solid;
     font:normal 12px Arial;
@@ -249,9 +188,8 @@ ul.pureCssMenu span{
 
     background-position:right center;
     background-repeat: no-repeat;
-    padding-right:8px;}
-/*ul.pureCssMenu li:hover>a>span{	background-image:url(../images/arrv_white_2.gif);*/
-/*}*/
+    padding-right:8px;
+}
 
 
 /******************* map help popup *********************/

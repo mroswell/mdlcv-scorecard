@@ -53,7 +53,7 @@ data = [{"score2017":20,"lifetimescore":38,"full_name":"George C. Edwards","dist
     {"score2017":100,"lifetimescore":93,"full_name":"Shirley Nathan-Pulliam ","district":44,"party":"D","email":"shirley.nathan.pulliam@senate.state.md.us","leg_id":"MDL000678","url":"http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=nathan&stab=01","twitter":""},
     {"score2017":100,"lifetimescore":79,"full_name":"Nathaniel J. McFadden","district":45,"party":"D","email":"nathaniel.mcfadden@senate.state.md.us","leg_id":"MDL000219","url":"http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=mcfadden&stab=01","twitter":""},
     {"score2017":100,"lifetimescore":96,"full_name":"Bill Ferguson","district":46,"party":"D","email":"bill.ferguson@senate.state.md.us","leg_id":"MDL000379","url":"http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=ferguson&stab=01","twitter":"SenBillFerg"},
-    {"score2017":100,"lifetimescore":98,"full_name":"Victor R. Ramirez","district":47,"party":"D","email":"victor.ramirez@senate.state.md.us","leg_id":"MDL000344","url":"http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=ramirez&stab=01","twitter":"VoteForRamirez"}]
+    {"score2017":100,"lifetimescore":98,"full_name":"Victor R. Ramirez","district":47,"party":"D","email":"victor.ramirez@senate.state.md.us","leg_id":"MDL000344","url":"http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=ramirez&stab=01","twitter":"VoteForRamirez"}];
 
 
 $(document).ready(function() {
@@ -69,10 +69,8 @@ function showInfo(data) {
     app.infoboxTemplate = Handlebars.compile(sourcebox);
 
     for(i=0;i<data.length;i++){
-        console.log(data[i]);
         scoreColor = getColor(data[i].score2017);
         data[i].scoreColor = scoreColor;
-        console.log(data[i]);
         MDSenateDistricts[data[i].district] = data[i];
         var html = template(data[i]);
         $("#content").append(html);
