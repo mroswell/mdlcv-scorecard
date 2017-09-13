@@ -170,7 +170,6 @@ function showInfo(data) {
         $("#content").append(html);
     }
 }
-  //          processJSON(tabletop.sheets("Sheet1").all());
 
 function getColor(score) {
   return score > 99 ? '#4EAB07' :
