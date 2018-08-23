@@ -1,0 +1,142 @@
+indexmatch,score2018,lifetimescore,rownum,full_name,id,district,district_padded,sort1,party,email,twitter
+1A,40,43,46,Wendell R. Beitzel,MDL000247,1A,01A,1,R,wendell.beitzel@house.state.md.us,bietzelw
+1B,0,12,47,Jason C. Buckel,MDL000637,1B,01B,1,R,Jason.Buckel@house.state.md.us,
+1C,0,20,48,Mike McKay,MDL000628,1C,01C,1,R,Mike.McKay@house.state.md.us,lavaledryclean
+2A,0,15,71,Neil Parrott,MDL000648,2A,02A,2,R,neil.parrott@house.state.md.us,neilparrott
+2A,0,23,70,William J. Wivell,MDL000719,2A,02A,2,R,william.wivell@house.state.md.us,
+2B,40,40,72,Paul Corderman,MDL000696,2B,02B,2,R,paul.corderman@house.state.md.us,
+3A,100,100,85,Karen Lewis Young,MDL000675,3A,03A,3,D,Karen.Young@house.state.md.us,KarenLewisYoung
+3A,100,100,86,Carol L. Krimm,MDL000672,3A,03A,3,D,Carol.Krimm@house.state.md.us,
+3B,33,17,87,William Folden,MDL000699,3B,03B,3,R,William.Folden@house.state.md.us,
+4,20,24,1,Kathy Afzali,MDL000676,4,004,4,R,kathy.afzali@house.state.md.us,Kathy_Afzali
+4,0,25,2,Barrie S. Ciliberti,MDL000716,4,004,4,R,Barrie.Ciliberti@house.state.md.us,
+4,75,53,3,"David E. Vogt, III",MDL000687,4,004,4,R,David.Vogt@house.state.md.us,DavidVogt_MD
+5,20,34,5,Susan W. Krebs,MDL000653,5,005,5,R,susan.krebs@house.state.md.us,
+5,0,17,4,April Rose,MDL000718,5,005,5,R,April.Rose@house.state.md.us,
+5,0,22,6,Haven Shoemaker,MDL000655,5,005,5,R,Haven.Shoemaker@house.state.md.us,Commshoemaker
+6,20,21,9,"Robin L. Grammer, Jr.",MDL000681,6,006,6,R,Robin.Grammer@house.state.md.us,RobinGrammer
+6,0,17,7,Robert B. Long,MDL000658,6,006,6,R,Bob.Long@house.state.md.us,DelegateLong
+6,0,11,8,Ric Metzgar,MDL000685,6,006,6,R,Ric.Metzgar@house.state.md.us,
+7,14,17,12,Richard K. Impallaria,MDL000298,7,007,7,R,rick.impallaria@house.state.md.us,
+7,0,23,10,Patrick L. McDonough,MDL000325,7,007,7,R,pat.mcdonough@house.state.md.us,Pat_McDonough
+7,40,24,11,Kathy J. Szeliga,MDL000412,7,007,7,R,kathy.szeliga@house.state.md.us,MarylandKathy
+8,100,79,13,Eric M. Bromwell,MDL000255,8,008,8,D,eric.bromwell@house.state.md.us,EricBromwell
+8,20,36,15,Joseph C. Cluster Jr.,MDL000392,8,008,8,R,joe.cluster@house.state.md.us,
+8,40,67,14,Christian Miele,MDL000673,8,008,8,R,Christian.Miele@house.state.md.us,Christian_Miele
+9A,0,11,103,Trent Kittleman,MDL000671,9A,09A,9,R,Trent.Kittleman@house.state.md.us,TrentKittleman
+9A,0,8,104,Warren E. Miller,MDL000328,9A,09A,9,R,warren.miller@house.state.md.us,delwarmill
+9B,83,65,105,Robert L. Flanagan,MDL000631,9B,09B,9,R,Bob.Flanagan@house.state.md.us,FlanaganForEC
+10,86,96,16,Benjamin Brooks,MDL000625,10,010,10,D,Benjamin.Brooks@house.state.md.us,BenBrooksSr
+10,100,92,17,Jay Jalisi,MDL000638,10,010,10,D,Jay.Jalisi@house.state.md.us,FriendsofJalisi
+10,100,94,18,Adrienne A. Jones,MDL000304,10,010,10,D,drienne.jones@house.state.md.us,
+11,100,100,21,Shelly Hettleman,MDL000667,11,011,11,D,Shelly.Hettleman@house.state.md.us,shellyhettleman
+11,100,98,19,Dan K. Morhaim,MDL000332,11,011,11,D,dan.morhaim@house.state.md.us,DanMorhaim
+11,100,92,20,Dana M. Stein,MDL000361,11,011,11,D,dana.stein@house.state.md.us,
+12,100,100,23,Eric Ebersole,MDL000691,12,012,12,D,Eric.Ebersole@house.state.md.us,ericebersole
+12,100,100,24,Terri L. Hill,MDL000647,12,012,12,D,Terri.Hill@house.state.md.us,FriendsofTerri
+12,100,100,22,Clarence K. Lam,MDL000643,12,012,12,D,Clarence.Lam@house.state.md.us,ClarenceLamMD
+13,100,100,26,Vanessa E. Atterbeary,MDL000620,13,013,13,D,Vanessa.Atterbeary@house.state.md.us,VAtterbeary
+13,100,94,27,Shane E. Pendergrass,MDL000342,13,013,13,D,shane.pendergrass@house.state.md.us,
+13,100,94,25,Frank S. Turner,MDL000368,13,013,13,D,frank.turner@house.state.md.us,
+14,100,93,29,Anne R. Kaiser,MDL000306,14,014,14,D,nne.kaiser@house.state.md.us,DelegateKaiser
+14,100,95,28,Eric G. Luedtke,MDL000401,14,014,14,D,eric.luedtke@house.state.md.us,EricLuedtke
+14,100,100,30,Pam Queen,MDL000417,14,014,14,D,craig.zucker@house.state.md.us,
+15,80,92,32,Kathleen M. Dumais,MDL000270,15,015,15,D,kathleen.dumais@house.state.md.us,KathleenDumais1
+15,100,100,33,David Fraser-Hidalgo,MDL000617,15,015,15,D,david.fraser.hidalgo@house.state.md.us,fraserfor15
+15,100,95,31,Aruna Miller,MDL000404,15,015,15,D,runa.miller@house.state.md.us,arunamiller
+16,100,97,36,C. William Frick,MDL000277,16,016,16,D,bill.frick@house.state.md.us,billfrick
+16,100,100,34,Ariana B. Kelly,MDL000400,16,016,16,D,riana.kelly@house.state.md.us,DelArianaKelly
+16,100,100,35,Marc Korman,MDL000657,16,016,16,D,Marc.Korman@house.state.md.us,mkorman
+17,100,91,39,Kumar P. Barve,MDL000244,17,017,17,D,kumar.barve@house.state.md.us,KumarBarve
+17,100,93,37,James W. Gilchrist,MDL000281,17,017,17,D,jim.gilchrist@house.state.md.us,
+17,100,100,38,Andrew Platt,MDL000644,17,017,17,D,Andrew.Platt@house.state.md.us,PlattforMD
+18,100,96,40,Alfred C. Carr Jr.,MDL000260,18,018,18,D,fred.carr@house.state.md.us,alfredcarr
+18,100,99,41,Ana Sol Gutierrez,MDL000284,18,018,18,D,na.gutierrez@house.state.md.us,asolg
+18,100,97,42,Jeffrey D. Waldstreicher,MDL000373,18,018,18,D,jeff.waldstreicher@house.state.md.us,jwaldstreicher
+19,100,100,43,Bonnie L. Cullison,MDL000393,19,019,19,D,bonnie.cullison@house.state.md.us,Del_Cullison
+19,100,92,44,Benjamin F. Kramer,MDL000311,19,019,19,D,benjamin.kramer@house.state.md.us,
+19,100,100,45,Marice Morales,MDL000635,19,019,19,D,Marice.Morales@house.state.md.us,Marice_Morales
+20,100,93,51,Sheila E. Hixson,MDL000293,20,020,20,D,sheila.hixson@house.state.md.us,delsheilahixson
+20,100,100,50,David Moon,MDL000645,20,020,20,D,David.Moon@house.state.md.us,DavidMoon2014
+20,100,100,49,Jheanelle Wilkins,MDL000623,20,020,20,D,jheanelle.wilkins@house.state.md.us,Willcsmithjr
+21,100,94,54,Benjamin S. Barnes,MDL000241,21,021,21,D,ben.barnes@house.state.md.us,
+21,100,93,53,Barbara A. Frush,MDL000278,21,021,21,D,barbara.frush@house.state.md.us,delegate61hotma
+21,100,95,52,Joseline A. Pena-Melnyk,MDL000341,21,021,21,D,joseline.pena.melnyk@house.state.md.us,penamelnykformd
+22,100,95,57,Tawanna P. Gaines,MDL000279,22,022,22,D,wanna.gaines@house.state.md.us,
+22,100,94,56,Anne Healey,MDL000290,22,022,22,D,nne.healey@house.state.md.us,
+22,100,96,55,Alonzo T. Washington,MDL000605,22,022,22,D,nzo.washington@house.state.md.us,DelegateATW
+23A,100,97,106,Geraldine Valentino-Smith,MDL000413,23A,23A,23,D,geraldine.valentino.smith@house.state.md.us,
+23B,100,91,107,Marvin E. Holmes Jr.,MDL000294,23B,23B,23,D,rvin.holmes@house.state.md.us,MarvinEHolmesJr
+23B,100,89,108,"Joseph F. Vallario, Jr.",MDL000659,23B,23B,23,D,joseph.vallario@house.state.md.us,
+24,80,94,58,Carolyn J.B. Howard,MDL000295,24,024,24,D,carolyn.howard@house.state.md.us,carolynjbhoward
+24,100,93,59,Jazz Lewis,MDL000372,24,024,24,D,jazz.lewis@house.state.md.us,
+24,100,100,60,Erek L. Barron,MDL000668,24,024,24,D,Erek.Barron@house.state.md.us,erekbarron
+25,100,100,62,Angela Angel,MDL000663,25,025,25,D,Angela.Angel@house.state.md.us,Angel4Dist25
+25,100,95,63,Darryl Barnes,MDL000664,25,025,25,D,Darryl.Barnes@house.state.md.us,
+25,100,95,61,Dereck E Davis,MDL000267,25,025,25,D,dereck.davis@house.state.md.us,
+26,100,92,66,Tony Knotts,MDL000619,26,026,26,D,Tony.Knotts@house.state.md.us,VoteKnotts
+26,100,91,65,Kriselda Valderrama,MDL000370,26,026,26,D,kris.valderrama@house.state.md.us,
+26,100,88,64,Jay Walker,MDL000374,26,026,26,D,jay.walker@house.state.md.us,
+27A,100,100,109,Susie Proctor,MDL000343,27A,27A,27,D,susie.proctor@house.state.md.us,
+27B,100,95,110,Michael A. Jackson,MDL000621,27B,27B,27,D,Michael.Jackson@house.state.md.us,Michaelfor27B
+27C,0,8,111,Mark N. Fisher,MDL000654,27C,27C,27,R,rk.fisher@house.state.md.us,fisher4maryland
+28,86,71,68,Sally Y. Jameson,MDL000301,28,028,28,D,sally.jameson@house.state.md.us,SallyYJameson
+28,100,100,69,Edith J. Patterson,MDL000689,28,028,28,D,Edith.Patterson@house.state.md.us,EdithPatterson
+28,100,85,67,C. T. Wilson,MDL000416,28,028,28,D,ct.wilson@house.state.md.us,votectwilson
+29A,0,11,112,Matthew Morgan,MDL000674,29A,29A,29,R,Matt.Morgan@house.state.md.us,MattMorgan29A
+29B,0,11,113,Deborah C. Rey,MDL000693,29B,29B,29,R,Deborah.Rey@house.state.md.us,
+29C,50,36,114,Gerald W. Clark,MDL000339,29C,29C,29,R,jerry.clark@house.state.md.us,
+30A,100,95,115,Herb McMillan,MDL000642,30A,30A,30,R,herb.mcmillan@house.state.md.us,herbmcmillan
+30A,33,48,116,Michael E. Busch,MDL000636,30A,30A,30,D,chael.busch@house.state.md.us,SpeakerBusch
+30B,43,32,117,Seth A. Howard,MDL000630,30B,30B,30,R,Seth.Howard@house.state.md.us,sethfordelegate
+31A,86,82,118,Ned Carey,MDL000665,31A,31A,31,D,Ned.Carey@house.state.md.us,
+31B,80,52,119,Meagan C. Simonaire,MDL000690,31B,31B,31,R,Meagan.Simonaire@house.state.md.us,
+31B,100,69,120,Nicholaus R. Kipke,MDL000626,31B,31B,31,R,nicholaus.kipke@house.state.md.us,Kipke
+32,100,90,73,Pamela G. Beidle,MDL000246,32,032,32,D,pamela.beidle@house.state.md.us,beidlep1
+32,100,100,74,Mark S. Chang,MDL000634,32,032,32,D,Mark.Chang@house.state.md.us,marksoochang
+32,100,93,75,Theodore J. Sophocleus,MDL000359,32,032,32,D,ted.sophocleus@house.state.md.us,
+33,20,28,77,Michael E. Malone,MDL000720,33,033,33,R,Michael.Malone@house.state.md.us,
+33,0,28,78,Tony McConkey,MDL000677,33,033,33,R,ny.mcconkey@house.state.md.us,McConkey
+33,0,17,76,Sid Saab,MDL000700,33,033,33,R,Sid.Saab@house.state.md.us,SidSaab
+34A,0,14,121,Glen Glass,MDL000395,34A,34A,34,R,glen.glass@house.state.md.us,
+34A,86,96,122,Mary Ann Lisanti,MDL000703,34A,34A,34,D,MaryAnn.Lisanti@house.state.md.us,maryannlisanti
+34B,20,29,123,Susan K. McComas,MDL000641,34B,34B,34,R,susan.mccomas@house.state.md.us,
+35A,40,50,124,Kevin B. Hornberger,MDL000692,35A,35A,35,R,Kevin.Hornberger@house.state.md.us,
+35B,33,62,125,Andrew Cassilly,MDL000622,35B,35B,35,R,Andrew.Cassilly@house.state.md.us,
+35B,40,33,126,Teresa E. Reilly,MDL000650,35B,35B,35,R,Teresa.Reilly@house.state.md.us,
+36,14,8,79,Steven J. Arentz,MDL000618,36,036,36,R,steven.arentz@house.state.md.us,Steve_Arentz
+36,20,20,80,Jefferson L. Ghrist,MDL000686,36,036,36,R,Jeff.Ghrist@house.state.md.us,jeffghrist
+36,33,25,81,Jay A. Jacobs,MDL000399,36,036,36,R,jay.jacobs@house.state.md.us,
+37A,100,76,127,Sheree Sample-Hughes,MDL000683,37A,37A,37,D,Sheree.Sample.Hughes@house.state.md.us,
+37B,29,17,129,Christopher T. Adams,MDL000697,37B,37B,37,R,Christopher.Adams@house.state.md.us,Adams4Maryland
+37B,29,26,128,Johnny Mautz,MDL000660,37B,37B,37,R,Johnny.Mautz@house.state.md.us,Mautz4Delegate
+38A,33,21,130,Charles J. Otto,MDL000406,38A,38A,38,R,charles.otto@house.state.md.us,
+38B,83,58,131,"Carl  Anderton, Jr.",MDL000684,38B,38B,38,R,Carl.Anderton@house.state.md.us,carlandertonjr
+38C,80,50,132,Mary Beth Carozza,MDL000695,38C,38C,38,R,MaryBeth.Carozza@house.state.md.us,DelMBCarozza
+39,100,89,82,Charles E. Barkley,MDL000240,39,039,39,D,charles.barkley@house.state.md.us,
+39,100,97,84,Kirill Reznik,MDL000345,39,039,39,D,kirill.reznik@house.state.md.us,DelegateReznik
+39,100,98,83,Shane D. Robinson,MDL000409,39,039,39,D,shane.robinson@house.state.md.us,DelSRobinson
+40,100,85,89,Frank M. Conaway Jr.,MDL000264,40,040,40,D,frank.conaway@house.state.md.us,
+40,100,100,90,Antonio L. Hayes,MDL000632,40,040,40,D,Antonio.Hayes@house.state.md.us,CFAntonioHayes
+40,100,95,88,Nick J. Mosby,MDL000348,40,040,40,D,nick.mosby@house.state.md.us,
+41,100,100,91,Bilal Ali,MDL000261,41,041,41,D,bilal.ali@house.state.md.us,jillpcarter
+41,100,100,92,Angela C. Gibson,MDL000338,41,041,41,D,angela.gibson@house.state.md.us,
+41,100,93,93,Samuel I. Rosenberg,MDL000349,41,041,41,D,samuel.rosenberg@house.state.md.us,delsandy
+42A,100,95,133,Stephen W. Lafferty,MDL000679,42A,42A,42,D,stephen.lafferty@house.state.md.us,delsteve42
+42B,60,44,134,Susan L. M. Aumann,MDL000656,42B,42B,42,R,susan.aumann@house.state.md.us,Susanaumann
+42B,60,78,135,Chris West,MDL000666,42B,42B,42,R,Chris.West@house.state.md.us,
+43,100,92,95,Curt Anderson,MDL000238,43,043,43,D,curt.anderson@house.state.md.us,DelegateHaynes
+43,100,89,96,Maggie D. McIntosh,MDL000327,43,043,43,D,ggie.mcintosh@house.state.md.us,DelMaggie43
+43,100,100,94,Mary L. Washington,MDL000415,43,043,43,D,ry.washington@house.state.md.us,DelMaryW
+44A,100,94,136,Keith E. Haynes,MDL000669,44A,44A,44,D,keith.haynes@house.state.md.us,DelegateHaynes
+44B,100,100,137,Charles E. Sydnor III,MDL000652,44B,44B,44,D,Charles.Sydnor@house.state.md.us,CharlesSydnor3d
+44B,100,100,138,Pat D. Young,MDL000670,44B,44B,44,D,pat.young@house.state.md.us,
+45,86,90,99,Talmadge Branch,MDL000252,45,045,45,D,dge.branch@house.state.md.us,WhipTBranch
+45,86,87,97,Cheryl D. Glenn,MDL000282,45,045,45,D,cheryl.glenn@house.state.md.us,
+45,100,96,98,Cory. V. McCray,MDL000640,45,045,45,D,Cory.McCray@house.state.md.us,electcorymccray
+46,100,97,100,Luke H. Clippinger,MDL000391,46,046,46,D,uke.clippinger@house.state.md.us,lukeclippinger
+46,100,100,101,Robbyn T. Lewis,MDL000287,46,046,46,D,robbyn.lewis@house.state.md.us,
+46,100,100,102,Brooke E. Lierman,MDL000688,46,046,46,D,Brooke.Lierman@house.state.md.us,BELBaltimore
+47A,100,100,140,Diana M. Fennell,MDL000651,47A,47A,47,D,Diana.Fennell@house.state.md.us,DianaMFennell
+47A,100,100,139,Jimmy D. Tarlau,MDL000661,47A,47A,47,D,Jimmy.Tarlau@house.state.md.us,JimmyTarlau
+47B,100,100,141,Carlo Sanchez,MDL000649,47B,47B,47,D,Will.Campos@house.state.md.us,
