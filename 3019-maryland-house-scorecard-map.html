@@ -28,16 +28,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="http://www.mdlcv.org/sites/mdlcv/files/mdlcv%20favcon_0.png" type="image/png">
-
+  <meta property="og:type" content="article" />
+  <meta property="fb:app_id" content="966242223397117"/>
+  <meta property="og:url" content="http://scorecard.mdlcv.org/2019-maryland-house-scorecard-map.html">
+  <meta property="og:image" content="http://scorecard.mdlcv.org/images/scorecard-map-house-2019.png">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="Maryland League of Conservation Voters">
 
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
     <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
   <![endif]-->
-  <!--<script async="" src="//www.google-analytics.com/analytics.js"></script>-->
-  <script id="facebook-jssdk"
-          src="//connect.facebook.net/en_EN/sdk.js#xfbml=1&amp;version=v2.3&amp;appId=579264578881928"></script>
+  <script id="facebook-jssdk" src="//connect.facebook.net/en_EN/sdk.js#xfbml=1&amp;version=v2.3&amp;appId=579264578881928"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script type="text/javascript" src="http://www.mdlcv.org/profiles/accelerator2015/themes/bs3base/js/jquery-1.7.2.min.js"><\/script>')</script>
   <!--<script src="http://www.mdlcv.org/misc/jquery.once.js?v=1.2"></script>-->
@@ -53,23 +56,17 @@
   <title>Maryland League of Conservation Voters | 2019 Legislative Scorecard</title>
   <meta property="og:title" content="Maryland League of Conservation Voters | 2019 House Legislative Scorecard">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:type" content="article" />
-  <meta property="fb:app_id" content="966242223397117"/>
-  <meta property="og:url" content="http://scorecard.mdlcv.org/2019-maryland-house-scorecard-map.html">
-  <meta property="og:image" content="http://scorecard.mdlcv.org/images/scorecard-map-house-2019.png">
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+
+  <meta name="description"
+        content="Maryland League of Conservation Voters (LCV) is a nonpartisan political voice for the environment. Maryland LCV is best known for our comprehensive yearly scorecard that evaluates the environmental votes of individual state legislators.">
 
   <meta property="og:description"
-        content="Maryland League of Conservation Voters (LCV) is a nonpartisan political voice for the environment. Maryland LCV is best known for our comprehensive yearly scorecard that evaluates the environmental votes of individual state legislators.">
-  <meta name="description"
         content="Maryland League of Conservation Voters (LCV) is a nonpartisan political voice for the environment. Maryland LCV is best known for our comprehensive yearly scorecard that evaluates the environmental votes of individual state legislators.">
   <link rel="stylesheet" href="css/styles-cleaned-2017.css"/>
   <link rel="shortcut icon" href="http://mdlcv.org/mdlcv-favicon.png">
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css"/>
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
-  <link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"
-        media="all">
+  <link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" media="all">
   <link rel="stylesheet" href="css/main-2017.css">
   <link rel="stylesheet" href="css/navstyle.css">
   <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
@@ -87,7 +84,6 @@
 </div>
 <div class="head-top nvregion tertiary clearfix">
   <section class="responsivenav">
-    <!-- Class "cbp-spmenu-open" gets applied to menu -->
     <a href="#menu" class="menu-link quinary prim">
       <span class="icon-bar tertiary"></span>
       <span class="icon-bar tertiary"></span>
@@ -97,7 +93,6 @@
 </div>
 
 <div class="container whitebg">
-
   <div class="container">
     <header class="header nvregion clearfix">
       <div>
@@ -105,7 +100,7 @@
           <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fscorecard.mdlcv.org&amp;t=Maryland%20League%20of%20Conservation%20Voters%20Scorecards"
              target="_blank"><img style="float:right;" src="images/facebook-24-blue.png" alt="facebook-24-blue"
                                   width="25" height="25"></a>
-          <a href="http://twitter.com/intent/tweet?text=NEW%21%20%40MDLCV%20interactive%20%23MDLCVScore%20map%2E%20How%20did%20your%20legislator%20do%3F%20%23MDGA18&amp;url=http://scorecard.mdlcv.org"
+          <a href="http://twitter.com/intent/tweet?text=NEW%21%20%40MDLCV%20interactive%20%23MDLCVScore%20map%2E%20How%20did%20your%20legislator%20do%3F%20%23MDGA19&amp;url=http://scorecard.mdlcv.org"
              target="_blank"><img style="float: right;" src="images/bird-24-lightblue.png" alt="bird-24-lightblue"
                                   width="25" height="25"></a>
         </div>
@@ -119,59 +114,41 @@
               <div class="container">
                 <nav role="navigation">
                   <ul class="menu nav navbar-nav">
-                    <li class="first expanded dropdown"><a href="http://mdlcv.org/about-maryland-lcv"
-                                                           class="dropdown-toggle prim">About Us <span
-                        class="caret"></span></a>
+                    <li class="first expanded dropdown">
+                      <a href="http://www.mdlcv.org/about-maryland-lcv" class="dropdown-toggle prim">About Us <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li class="first leaf"><a href="http://mdlcv.org/staff" class="prim">Staff</a></li>
-                        <li class="leaf"><a href="http://mdlcv.org/board-directors" class="prim">Board of Directors</a>
-                        </li>
-                        <li class="collapsed"><a href="http://mdlcv.org/jobs-and-internships" class="prim">Jobs and
-                          Internships</a></li>
-                        <li class="leaf"><a href="http://mdlcv.org/environmental-leadership-awards" class="prim">The
-                          Environmental Leadership Awards</a></li>
-                        <li class="last leaf"><a href="http://mdlcv.org/contact" class="prim">Contact</a></li>
+                        <li class="first collapsed">
+                          <a href="http://www.mdlcv.org/press-releases" class="prim">Media</a></li>
+                        <li class="leaf"><a href="http://www.mdlcv.org/staff" class="prim">Staff</a></li>
+                        <li class="leaf"><a href="http://www.mdlcv.org/board-directors" class="prim">Board of Directors</a></li>
+                        <li class="leaf"><a href="http://www.mdlcv.org/jobs-and-internships" class="prim">Jobs and Internships</a></li>
+                        <li class="leaf"><a href="http://www.mdlcv.org/events" class="prim">Events</a></li>
+                        <li class="leaf"><a href="http://www.mdlcv.org/environmental-leadership-awards" class="prim">The Environmental Leadership Awards</a></li>
+                        <li class="leaf"><a href="http://www.mdlcv.org/contact" class="prim">Contact</a></li>
+                        <li class="last leaf"><a href="http://www.mdlcv.org/about-maryland-lcv" class="prim">About Maryland LCV</a></li>
                       </ul>
                     </li>
-                    <li class="expanded dropdown"><a href="http://mdlcv.org/issues" class="dropdown-toggle prim">Issues
-                      <span class="caret"></span></a>
+                    <li class="expanded dropdown"><a href="http://www.mdlcv.org/issues" class="dropdown-toggle prim">Issues <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li class="first last leaf"><a href="http://mdlcv.org/weekly-legislative-hotlist" class="prim">Weekly
-                          Legislative Hotlist</a></li>
+                        <li class="first leaf"><a href="https://nvlupin.blob.core.windows.net/images/van/AV/AV Clean Energy Jobs Act</a></li>
+                  <li class="leaf"><a href="http://www.mdlcv.org/expanded-polystyrene-food-service-products-prohibition-sale-and-use" class="prim">2019 Foam Ban</a></li>
+                        <li class="leaf"><a href="http://www.mdlcv.org/healthy-green-maryland-amendment"
+                                            class="prim">2019 Healthy Green Maryland Amendment</a></li>
+                        <li class="last leaf"><a href="http://www.mdlcv.org/weekly-legislative-hotlist"
+                                                 class="prim">Weekly Legislative Hotlist</a></li>
                       </ul>
                     </li>
-                    <li class="expanded active-trail dropdown"><a href="http://scorecard.mdlcv.org/"
-                                                                  class="active-trail dropdown-toggle prim">Scorecards
-                      <span class="caret"></span></a>
+                    <li class="expanded active-trail dropdown"><a href="http://scorecard.mdlcv.org" class="active-trail dropdown-toggle prim">Scorecards <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li class="first leaf"><a href="http://scorecard.mdlcv.org/" class="prim">2019 Scorecard</a>
-                        </li>
-                        <li class="leaf"><a href="http://mdlcv.org/2019-governors-report-card" class="prim">2019
-                          Governor's Report Card</a></li>
-                        <li class="last leaf"><a href="http://mdlcv.org/scorecards" class="prim">Scorecard Archive</a>
-                        </li>
+                        <li class="first leaf"><a href="http://scorecard.mdlcv.org" class="prim">2019 Scorecard</a></li>
+                        <li class="leaf active-trail active"><a href="http://www.mdlcv.org/governors-first-term-report-card" class="active-trail active prim">Governor's First Term Report Card</a></li>
+                        <li class="last leaf"><a href="http://www.mdlcv.org/scorecard-archives" class="prim">Scorecard Archive</a></li>
                       </ul>
                     </li>
-                    <li class="leaf"><a href="http://mdlcv.org/events" class="prim">Events</a></li>
-                    <li class="leaf"><a href="http://mdlcv.org/press-releases" class="prim">Media</a></li>
-                    <li class="expanded dropdown"><a href="http://mdlcv.org/chispa" class="dropdown-toggle prim">Chispa
-                      <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li class="first leaf"><a href="http://mdlcv.org/chispa" class="prim">Program Overview</a></li>
-                        <li class="last leaf"><a href="http://mdlcv.org/chispa-blog" class="prim">Chispa Blog</a></li>
-                      </ul>
+                    <li class="leaf"><a href="http://www.marylandconservation.org/all-about-chispa-maryland" class="prim">Chispa</a></li>
+                    <li class="leaf"><a href="http://www.mdlcv.org/maryland-lcv-endorsements-2018" class="prim">Elections</a>
                     </li>
-                    <li class="collapsed"><a href="http://mdlcv.org/county-chapter" class="prim">County Chapter</a></li>
-                    <li class="last expanded dropdown" style="background-color: #428bca;"><a
-                        href="https://mdlcv.ngpvanhost.com/form/-8036690458339899392" class="dropdown-toggle prim">Donate
-                      <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li class="first leaf"><a href="https://mdlcv.ngpvanhost.com/form/-8036690458339899392"
-                                                  class="prim">Donate Now</a></li>
-                        <li class="last leaf"><a href="http://mdlcv.org/amazon-smile-program" class="prim">Amazon Smile
-                          Program</a></li>
-                      </ul>
-                    </li>
+                    <li class="last leaf" style="background-color: #428bca;"><a href="https://secure.everyaction.com/W3Y3haqrUkSLCgJmUFp5Ew2" class="prim">Donate</a></li>
                   </ul>
                 </nav>
               </div>
@@ -179,68 +156,77 @@
           </section>
         </div>
 
-        <nav id="menu" class="bigslide secondary" role="navigation"
-             style="position: fixed; top: 0px; bottom: 0px; width: 15.625em; height: 100%; transition: left 300ms ease;">
+        <nav id="menu" class="bigslide secondary" role="navigation"  style="position: fixed; top: 0px; bottom: 0px; width: 15.625em; height: 100%; transition: left 300ms ease;">
           <ul class="menu nav navbar-nav">
             <ul class="menu nav navbar-nav">
-              <li class="first expanded dropdown"><a href="http://mdlcv.org/about-maryland-lcv"
-                                                     class="dropdown-toggle prim">About Us <span
-                  class="caret"></span></a>
+              <li class="first expanded dropdown"><a href="http://www.mdlcv.org/about-maryland-lcv" class="dropdown-toggle prim">About Us <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li class="first leaf"><a href="http://mdlcv.org/staff" class="prim">Staff</a></li>
-                  <li class="leaf"><a href="http://mdlcv.org/board-directors" class="prim">Board of Directors</a></li>
-                  <li class="collapsed"><a href="http://mdlcv.org/jobs-and-internships" class="prim">Jobs and
-                    Internships</a></li>
-                  <li class="leaf"><a href="http://mdlcv.org/environmental-leadership-awards" class="prim">The
-                    Environmental Leadership Awards</a></li>
-                  <li class="last leaf"><a href="http://mdlcv.org/contact" class="prim">Contact</a></li>
+                  <li class="first collapsed"><a href="http://www.mdlcv.org/press-releases" class="prim">Media</a></li>
+                  <li class="leaf"><a href="http://www.mdlcv.org/staff" class="prim">Staff</a></li>
+                  <li class="leaf"><a href="http://www.mdlcv.org/board-directors" class="prim">Board of Directors</a></li>
+                  <li class="leaf"><a href="http://www.mdlcv.org/jobs-and-internships" class="prim">Jobs and Internships</a></li>
+                  <li class="leaf"><a href="http://www.mdlcv.org/events" class="prim">Events</a></li>
+                  <li class="leaf"><a href="http://www.mdlcv.org/environmental-leadership-awards" class="prim">The Environmental Leadership Awards</a></li>
+                  <li class="leaf"><a href="http://www.mdlcv.org/contact" class="prim">Contact</a></li>
+                  <li class="last leaf"><a href="http://www.mdlcv.org/about-maryland-lcv" class="prim">About Maryland LCV</a></li>
                 </ul>
               </li>
-              <li class="expanded dropdown"><a href="http://mdlcv.org/issues" class="dropdown-toggle prim">Issues <span
-                  class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li class="first last leaf"><a href="http://mdlcv.org/weekly-legislative-hotlist" class="prim">Weekly
-                    Legislative Hotlist</a></li>
-                </ul>
-              </li>
-              <li class="expanded active-trail dropdown"><a href="http://scorecard.mdlcv.org/"
-                                                            class="active-trail dropdown-toggle prim">Scorecards <span
-                  class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li class="first leaf"><a href="http://scorecard.mdlcv.org/" class="prim">2019 Scorecard</a></li>
-                  <li class="leaf"><a href="http://mdlcv.org/2019-governors-report-card" class="prim">2019 Governor's
-                    Report Card</a></li>
-                  <li class="last leaf"><a href="http://mdlcv.org/scorecards" class="prim">Scorecard Archive</a></li>
-                </ul>
-              </li>
-              <li class="leaf"><a href="http://mdlcv.org/events" class="prim">Events</a></li>
-              <li class="leaf"><a href="http://mdlcv.org/press-releases" class="prim">Media</a></li>
-              <li class="expanded dropdown"><a href="http://mdlcv.org/chispa" class="dropdown-toggle prim">Chispa <span
-                  class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li class="first leaf"><a href="http://mdlcv.org/chispa" class="prim">Program Overview</a></li>
-                  <li class="last leaf"><a href="http://mdlcv.org/chispa-blog" class="prim">Chispa Blog</a></li>
-                </ul>
-              </li>
-              <li class="collapsed"><a href="http://mdlcv.org/county-chapter" class="prim">County Chapter</a></li>
-              <li class="last expanded dropdown" style="background-color: #428bca;"><a
-                  href="https://mdlcv.ngpvanhost.com/form/-8036690458339899392" class="dropdown-toggle prim">Donate
+              <li class="expanded dropdown"><a href="http://www.mdlcv.org/issues" class="dropdown-toggle prim">Issues
                 <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li class="first leaf"><a href="https://mdlcv.ngpvanhost.com/form/-8036690458339899392" class="prim">Donate
-                    Now</a></li>
-                  <li class="last leaf"><a href="http://mdlcv.org/amazon-smile-program" class="prim">Amazon Smile
-                    Program</a></li>
+                <ul class="dropdown-menu"> href="https://nvlupin.blob.core.windows.net/images/van/AV/AVLCV/1/72150/images/FINAL%20wrap.pdf" class="prim">2019 Legislative Wrap-Up</a></li>
+                  <li class="collapsed"><a href="http://www.mdlcv.org/climate-change" class="prim">2019 Clean Energy Jobs Act</a></li>
+                  <li class="leaf"><a href="http://www.mdlcv.org/expanded-polystyrene-food-service-products-prohibition-sale-and-use" class="prim">2019 Foam Ban</a></li>
+                  <li class="leaf"><a href="http://www.mdlcv.org/healthy-green-maryland-amendment" class="prim">2019 Healthy Green Maryland Amendment</a></li>
+                  <li class="last leaf"><a href="http://www.mdlcv.org/weekly-legislative-hotlist" class="prim">Weekly Legislative Hotlist</a></li>
                 </ul>
               </li>
+              <li class="expanded active-trail dropdown"><a href="http://scorecard.mdlcv.org" class="active-trail dropdown-toggle prim">Scorecards <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="first leaf"><a href="http://scorecard.mdlcv.org" class="prim">2018 Scorecard</a></li>
+                  <li class="leaf active-trail active"><a href="http://www.mdlcv.org/governors-first-term-report-card" class="active-trail active prim">Governor's First Term Report Card</a></li>
+                  <li class="last leaf"><a href="http://www.mdlcv.org/scorecard-archives" class="prim">Scorecard Archive</a></li>
+                </ul>
+              </li>
+              <li class="leaf"><a href="http://www.marylandconservation.org/all-about-chispa-maryland" class="prim">Chispa</a>
+              </li>
+              <li class="leaf"><a href="http://www.mdlcv.org/maryland-lcv-endorsements-2018" class="prim">Elections</a></li>
+              <li class="last leaf" style="background-color: #428bca;"><a href="https://secure.everyaction.com/W3Y3haqrUkSLCgJmUFp5Ew2" class="prim">Donate</a></li>
             </ul>
           </ul>
+        </nav>
+      </div>
+
+        <nav id="menu" class="bigslide secondary" role="navigation" style="position: fixed; top: 0px; bottom: 0px; width: 15.625em; height: 100%; transition: left 300ms ease;">
+          <ul class="menu nav navbar-nav"><ul class="menu nav navbar-nav"><li class="first expanded dropdown"><a href="http://mdlcv.org/about-maryland-lcv" class="dropdown-toggle prim">About Us <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="http://mdlcv.org/staff" class="prim">Staff</a></li>
+            <li class="leaf"><a href="http://mdlcv.org/board-directors" class="prim">Board of Directors</a></li>
+            <li class="collapsed"><a href="http://mdlcv.org/jobs-and-internships" class="prim">Jobs and Internships</a></li>
+            <li class="leaf"><a href="http://mdlcv.org/environmental-leadership-awards" class="prim">The Environmental Leadership Awards</a></li>
+            <li class="last leaf"><a href="http://mdlcv.org/contact" class="prim">Contact</a></li>
+          </ul></li>
+            <li class="expanded dropdown"><a href="http://mdlcv.org/issues" class="dropdown-toggle prim">Issues <span class="caret"></span></a><ul class="dropdown-menu"><li class="first last leaf"><a href="http://mdlcv.org/weekly-legislative-hotlist" class="prim">Weekly Legislative Hotlist</a></li>
+            </ul></li>
+            <li class="expanded active-trail dropdown"><a href="http://scorecard.mdlcv.org/" class="active-trail dropdown-toggle prim">Scorecards <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+              <li class="first leaf"><a href="http://scorecard.mdlcv.org/" class="active-trail active prim">2019 Scorecard</a></li>
+              <li class="leaf"><a href="http://mdlcv.org/2019-governors-report-card" class="prim">2019 Governor's Report Card</a></li>
+                  <li class="last leaf"><a href="http://mdlcv.org/scorecards" class="prim">Scorecard Archive</a></li>
+            </ul></li>
+              <li class="leaf"><a href="http://mdlcv.org/events" class="prim">Events</a></li>
+              <li class="leaf"><a href="http://mdlcv.org/press-releases" class="prim">Media</a></li>
+            <li class="expanded dropdown"><a href="http://mdlcv.org/chispa" class="dropdown-toggle prim">Chispa <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="http://mdlcv.org/chispa" class="prim">Program Overview</a></li>
+                  <li class="last leaf"><a href="http://mdlcv.org/chispa-blog" class="prim">Chispa Blog</a></li>
+            </ul></li>
+              <li class="collapsed"><a href="http://mdlcv.org/county-chapter" class="prim">County Chapter</a></li>
+            <li class="last expanded dropdown" style="background-color: #428bca;"><a href="https://mdlcv.ngpvanhost.com/form/-8036690458339899392" class="dropdown-toggle prim">Donate <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="https://mdlcv.ngpvanhost.com/form/-8036690458339899392" class="prim">Donate Now</a></li>
+              <li class="last leaf"><a href="http://mdlcv.org/amazon-smile-program" class="prim">Amazon Smile Program</a></li>
+            </ul></li>
+          </ul></ul>
         </nav>
 
       </div>
     </header>
   </div>
-  <div id="scorecard-nav" class="container">
+  <div id="scorecard-map" class="container" style="background-color: white">
     <div class="row">
       <div class="col-md-12 fixwidth858">
         <h1>2019 Maryland House Scorecard Map</h1>
@@ -261,9 +247,7 @@
                                          target="_blank"
                                          href="https://mdlcv.ngpvanhost.com/2019-scorecard-spanish-insert">Spanish
               Insert (PDF)</a></li>
-            <li
-                class="pureCssMenui0"><a class="pureCssMenui0" href="http://openstates.org/find_your_legislator/"
-                                         target="_blank">Find
+            <li class="pureCssMenui0"><a class="pureCssMenui0" href="http://openstates.org/find_your_legislator/" target="_blank">Find
               Your Legislators</a></li>
             <li class="pureCssMenui0"><a class="pureCssMenui0" onclick="return false;" href="/"><span>Map Help</span>
               <span class="pop"> Delegate dots are randomly located within the appropriate district.<br><strong>Mouse
@@ -282,7 +266,6 @@
     </div>
     <div class=="row">
       <svg height="62" version="1.1" width="600" xmlns="http://www.w3.org/2000/svg"  style="overflow: hidden; position: relative; left: -0.5px;" data-type="plot" data-index="0"> <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs> <text x="7" y="20" stroke="none" fill="#343434" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 14px;" font-weight="600"> <tspan dy="4.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Legend:</tspan> </text> <circle cx="90" cy="20" r="7" fill="#ff0000" style="-webkit-tap-highlight-color: rgba(255, 0, 0, 0);" data-type="elem" data-index="0" data-hidden="0"></circle> <text x="101" y="20" stroke="none" fill="#343434" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 12px;"font-weight="600"> <tspan dy="4.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0%</tspan> </text> <circle cx="162" cy="20" r="7" fill="#fc8400" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" data-type="elem" data-index="1" data-hidden="0"></circle> <text x="172" y="20" stroke="none" fill="#343434" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 12px;" font-weight="600"> <tspan dy="4.25" style="-webkit-tap-highlight-color: rgba(253, 195, 0, 0);">1&ndash;24%</tspan> </text> <circle cx="253" cy="20" r="7" fill="#FDC300" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" data-type="elem" data-index="2" data-hidden="0"></circle> <text x="265" y="20" stroke="none" fill="#343434" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 12px;" font-weight="600"> <tspan dy="4.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">25&ndash;49%</tspan> </text> <circle cx="352" cy="20" r="7" fill="#FEF200" style="-webkit-tap-highlight-color: rgba(255, 0, 0, 0);" data-type="elem" data-index="0" data-hidden="0"></circle> <text x="364" y="20" stroke="none" fill="#343434" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 12px;"  font-weight="600"> <tspan dy="4.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">50&ndash;74%</tspan> </text> <circle cx="450" cy="20" r="7" fill="#82e0c3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); " data-type="elem" data-index="1" data-hidden="0"></circle> <text x="461" y="20" stroke="none" fill="#343434" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 12px;" font-weight="600"> <tspan dy="4.25" style="-webkit-tap-highlight-color: rgba(253, 195, 0, 0);">75&ndash;99%</tspan> </text> <circle cx="555" cy="20" r="7" fill="#4eab07" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" data-type="elem" data-index="2" data-hidden="0"></circle> <text x="566" y="20" stroke="none" fill="#343434" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font-family: Arial; font-size: 12px;" font-weight="600"> <tspan dy="4.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100%</tspan> </text></svg>
-
     </div>
     <div class="row">
       <div id="main" class="col-md-12">
@@ -321,7 +304,7 @@
       {{{notes}}}<br>
       {{#if email}}<a target='_blank' href="mailto:{{{email}}}"><i class="icon-envelope icon-2x custom-icon"></i></a>{{/if}}
       <a
-          href="http://twitter.com/intent/tweet?text=NEW%21%20%40MDLCV%20interactive%20%23MDLCVScore%20map%2E%20How%20did%20your%20legislator%20do%3F%20%23MDGA18&amp;url=http://scorecard.mdlcv.org"
+              href="http://twitter.com/intent/tweet?text=NEW%21%20%40MDLCV%20interactive%20%23MDLCVScore%20map%2E%20How%20did%20your%20legislator%20do%3F%20%23MDGA19&amp;url=http://scorecard.mdlcv.org"
           target="_blank"><i
           class="icon-twitter icon-2x custom-icon"></i></a>
       <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fscorecard.mdlcv.org&amp;t=Maryland%20League%20of%20Conservation%20Voters%20Scorecard"
@@ -345,13 +328,11 @@
       {{{notes}}}<br>
       {{#if email}}<a target='_blank' href="mailto:{{{email}}}"><i class="icon-envelope icon-2x custom-icon"></i></a>{{/if}}
 
-      <a
-          href="http://twitter.com/intent/tweet?text=NEW%21%20%40MDLCV%20interactive%20%23MDLCVScore%20map%2E%20How%20did%20your%20legislator%20do%3F%20%23MDGA18&amp;url=http://scorecard.mdlcv.org"
+      <a href="http://twitter.com/intent/tweet?text=NEW%21%20%40MDLCV%20interactive%20%23MDLCVScore%20map%2E%20How%20did%20your%20legislator%20do%3F%20%23MDGA19&amp;url=http://scorecard.mdlcv.org"
           target="_blank"><i
           class="icon-twitter icon-2x custom-icon"></i></a>
       <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fscorecard.mdlcv.org&amp;t=Maryland%20League%20of%20Conservation%20Voters%20Scorecard"
-         target="_blank"><i
-          class="icon-facebook icon-2x custom-icon"></i></a>
+         target="_blank"><i class="icon-facebook icon-2x custom-icon"></i></a>
     </div>
   </div>
 </script>
