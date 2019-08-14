@@ -221,6 +221,7 @@ img {
 /* actioncenter ***************************** */
 .dropdown-menu > li > a {
     padding: 11px;
+    text-align: left;
 }
 
 /* MEDIA QUERIES ************************* */
@@ -301,6 +302,7 @@ img {
 @media (min-width: 992px) and (max-width: 1199px) {
     .navbar-nav > li > a {
         padding: 15px 11px;
+        text-align: left;
     }
 }
 @media (min-width: 992px) {
@@ -366,6 +368,7 @@ img {
 
 .navbar-nav > li > a {
     padding-bottom: 15px;
+    text-align:left;
 }
 
 .navbar-default .navbar-nav > .open > a,
